@@ -1,0 +1,140 @@
+/*MODAL Navigation Menu - START*/
+.nav-burger-block {
+    position: relative;
+}
+
+.nav-burger {
+    width: 32px;
+    height: 32px;
+    display: none;
+    position: relative;
+    opacity: 0;
+    cursor: pointer
+}
+
+.nav-burger:checked ~ .nav-modal {
+    /*display: block;*/
+    transform: scale(1, 1)
+}
+
+/*.nav-burger:checked ~ .nav-modal a, .nav-modal li, .nav-modal div span {*/
+/*    opacity: 1;*/
+/*}*/
+
+/*.nav-burger:checked ~ .nav-modal li {*/
+/*    opacity: 1;*/
+/*}*/
+
+/*.nav-burger:checked ~ .nav-modal div span {*/
+/*    opacity: 1;*/
+/*}*/
+
+.nav-burger-lines {
+    bottom: 10px;
+    left: 8px;
+}
+
+.nav-burger-lines,
+.nav-burger-lines::before,
+.nav-burger-lines::after {
+    width: 16px;
+    height: 2px;
+    display: none;
+    background-color: #273841;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-modal {
+    width: 400px;
+    height: 100vh;
+    background-color: #273841;
+    position: fixed;
+    padding-left: 60px;
+    top: 0;
+    left: 0;
+    /*display: none;*/
+    z-index: 99;
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: transform 400ms ease-in-out;
+}
+
+.close-cross {
+    margin: 30px;
+    cursor: pointer;
+}
+
+.nav-modal a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    position: relative;
+    /*opacity: 0;*/
+}
+
+.nav-modal li {
+    margin-bottom: 26px;
+    list-style: none;
+    /*opacity: 0;*/
+}
+
+.nav-modal div span {
+    /*opacity: 0;*/
+}
+
+.nav-modal a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #00CCCC none repeat scroll 0 0;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.nav-modal a:hover {
+    color: #00CCCC;
+}
+
+.nav-modal a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .nav-burger {
+        margin-right: 8px;
+        display: block;
+    }
+
+    .nav-burger-lines,
+    .nav-burger-lines::before,
+    .nav-burger-lines::after {
+        display: block;
+    }
+
+    .nav-burger-lines::before,
+    .nav-burger-lines::after {
+        content: "";
+        position: absolute;
+    }
+
+    .nav-burger-lines::before {
+        height: 2px;
+        bottom: 12px;
+    }
+
+    .nav-burger-lines::after {
+        height: 2px;
+        bottom: 6px;
+    }
+
+}
+
+/*MODAL Navigation Menu - END*/
