@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,33 +6,45 @@
 
 body {
     width: 100vw;
+    padding-top: 1em;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 header {
-    width: 1430px;
+    max-width: 1430px;
     height: 92px;
-    display: flex;
+    display: grid;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    /*background-color: lightblue;*/
+    /*column-gap: 10px;*/
+    row-gap: 10px;
+    grid-template-areas:
+            "A B C"
+            ". D .";
 }
 
 .logo {
     width: 216px;
     height: 50px;
-    margin: 0 0 0 30px;
+    margin: 0 10px 0 30px;
+    grid-area: A;
+}
+
+.nav-mobile {
+    grid-area: D;
+    display: none;
 }
 
 .menu {
     display: flex;
     align-items: center;
+    grid-area: B;
 }
 
 .menu__item {
     height: 48px;
-    padding: 0 18px;
+    padding: 0 10px;
     display: flex;
     align-items: center;
     border-left: solid 1px #D4E0E7;
@@ -47,7 +59,8 @@ header {
 
 
 .menu__item:last-child {
-    border-right: solid 1px #D4E0E7;;
+    width: auto;
+    border-right: solid 1px #D4E0E7;
 }
 
 img {
@@ -55,9 +68,20 @@ img {
 }
 
 .cart {
+    height: 48px;
+    padding: 0 10px;
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+
+.cart {
+    height: 48px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    grid-area: C;
 }
 
 .cart a {
@@ -100,4 +124,56 @@ img {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
+}
+
+@media (max-width: 1441px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1220px) {
+    header {
+        height: auto;
+        margin-top: 1em;
+        grid-template-areas:
+            "A C"
+            "D D";
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .nav-mobile {
+        width: 100%;
+        display: flex;
+        margin-top: 1em;
+        justify-content: center;
+        border-top: solid 1px #D4E0E7;
+    }
+
+    .menu__item {
+        border-left: none;
+        border-right: solid 1px #D4E0E7;
+    }
+
+    .menu__item:last-child {
+        border-right: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 500px) {
+
+}
+
+@media (max-width: 320px) {
+
 }
