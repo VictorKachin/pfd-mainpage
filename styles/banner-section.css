@@ -1,0 +1,11 @@
+.banner-section {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-block {
+    width: 1430px;
+    display: flex;
+    justify-content: space-between;
+}

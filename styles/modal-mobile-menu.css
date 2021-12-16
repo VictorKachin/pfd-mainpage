@@ -31,7 +31,7 @@
 
 .nav-burger-lines {
     bottom: 10px;
-    left: 8px;
+    left: 13px;
 }
 
 .nav-burger-lines,
@@ -51,7 +51,7 @@
     height: 100vh;
     background-color: #273841;
     position: fixed;
-    padding-left: 60px;
+    padding: 0 30px;
     top: 0;
     left: 0;
     /*display: none;*/
@@ -78,6 +78,7 @@
 
 .nav-modal li {
     margin-bottom: 26px;
+    margin-left: 10px;
     list-style: none;
     /*opacity: 0;*/
 }
@@ -102,9 +103,44 @@
     color: #00CCCC;
 }
 
+.nav-modal span {
+    font-size: 14px;
+    line-height: 24px;
+    color: #00CCCC;
+}
+
 .nav-modal a:hover::after {
     width: 100%;
     left: 0;
+}
+
+.new-menu-item {
+    position: relative;
+}
+
+.new-menu-item span {
+    position: absolute;
+    bottom: 14px;
+    /*left: 106px;*/
+}
+
+.shop-menu-item {
+    height: 60px;
+    border-top: 1px solid #979797;
+    border-bottom: 1px solid #979797;
+    margin-bottom: 26px;
+    position: relative;
+}
+
+
+.shop-menu-item a {
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+.shop-menu-item span {
+    position: absolute;
+    top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -134,7 +170,13 @@
         height: 2px;
         bottom: 6px;
     }
-
 }
+
+@media (max-width: 500px) {
+    .nav-modal {
+        width: 100%;
+    }
+}
+
 
 /*MODAL Navigation Menu - END*/

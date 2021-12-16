@@ -1,0 +1,81 @@
+.image-section {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.image-block {
+    width: 1430px;
+}
+
+.sort-select {
+    margin: 20px 0 20px 0;
+}
+
+.sort-select span {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #273841;
+}
+
+.images-cards {
+    display: flex;
+    align-items: stretch;
+}
+
+.left-cards {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card-block {
+    width: 170px;
+    margin-right: 40px;
+}
+
+.card-img {
+    margin-bottom: 10px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.like-cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.like-cart img {
+    margin-right: 10px;
+}
+
+.like-cart img:last-child {
+    margin-right: 0;
+}
+
+.right-cards {
+    width: 370px;
+    height: 438px;
+}
+
+.go-to {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.go-to-button {
+    width: 230px;
+    height: 40px;
+    background-color: #00CCCC;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
