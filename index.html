@@ -16,9 +16,9 @@
           rel="stylesheet">
     <title>PicsForDesign.com - Illustration store. PSP tubes, PSD illustrations, Vector illustrations.</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/01-header.css">
     <link rel="stylesheet" href="styles/modal-mobile-menu.css">
-    <link rel="stylesheet" href="styles/search-section.css">
+    <link rel="stylesheet" href="styles/02-search-section.css">
     <link rel="stylesheet" href="styles/image-block.css">
     <link rel="stylesheet" href="styles/carousel.css">
     <link rel="stylesheet" href="styles/banner-section.css">
@@ -42,18 +42,18 @@
                 </span>
                 </label>
                 <ul>
-                    <li><a href="">Exclusive club</a></li>
-                    <li><a href="">Prepaid projects</a></li>
-                    <li><a href="">Post editor</a></li>
-                    <li class="new-menu-item"><a href="">Ordering images</a><span>new</span></li>
-                    <li><a href="">Blog</a></li>
+                    <li><a href="#">Exclusive club</a></li>
+                    <li><a href="#">Prepaid projects</a></li>
+                    <li><a href="#">Post editor</a></li>
+                    <li class="new-menu-item"><a href="#">Ordering images</a><span>new</span></li>
+                    <li><a href="#">Blog</a></li>
                 </ul>
-                <div class="shop-menu-item"><a href="">Open a shop</a><span>coming soon</span></div>
+                <div class="shop-menu-item"><a href="#">Open a shop</a><span>coming soon</span></div>
                 <ul>
-                    <li><a href="">Shopping cart</a></li>
-                    <li><a href="">Wishlist</a></li>
-                    <li><a href="">Quests</a></li>
-                    <li><a href="">FAQ</a></li>
+                    <li><a href="#">Shopping cart</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Quests</a></li>
+                    <li><a href="#">FAQ</a></li>
                 </ul>
             </div>
             <!--MODAL Navigation Menu - END-->
@@ -70,30 +70,30 @@
         <div class="menu">
             <div class="menu__item">
                 <img src="img/01-header-icon-crown.png" alt="crown">
-                <a href="">Exclusive club</a>
+                <a href="#">Exclusive club</a>
             </div>
             <div class="menu__item">
                 <img src="img/02-header-icon-clock.png" alt="clock">
-                <a href="">Prepaid projects</a>
+                <a href="#">Prepaid projects</a>
             </div>
             <div class="menu__item">
                 <img src="img/03-header-icon-posted.png" alt="posted">
-                <a href="">Post editor</a>
+                <a href="#">Post editor</a>
             </div>
             <div class="menu__item">
                 <img src="img/04-header-icon-blog.png" alt="blog">
-                <a href="">Blog</a>
+                <a href="#">Blog</a>
             </div>
             <div class="menu__item">
                 <img src="img/06-header-icon-order.png" alt="order">
-                <a href="">Ordering images</a>
+                <a href="#">Ordering images</a>
             </div>
         </div>
     </nav>
     <!--NAV Menu links DESKTOP - END-->
     <div class="cart">
         <img src="img/05-header-icon-shop.png" alt="shop">
-        <a href="">Open a shop</a>
+        <a href="#">Open a shop</a>
         <div class="cart__count">
             <img src="img/shopping-cart.png" alt="cart">
             <span>14</span>
@@ -107,23 +107,23 @@
         <div class="menu">
             <div class="menu__item">
                 <img src="img/01-header-icon-crown.png" alt="crown">
-                <a href="">Exclusive club</a>
+                <a href="#">Exclusive club</a>
             </div>
             <div class="menu__item">
                 <img src="img/02-header-icon-clock.png" alt="clock">
-                <a href="">Prepaid projects</a>
+                <a href="#">Prepaid projects</a>
             </div>
             <div class="menu__item">
                 <img src="img/03-header-icon-posted.png" alt="posted">
-                <a href="">Post editor</a>
+                <a href="#">Post editor</a>
             </div>
             <div class="menu__item">
                 <img src="img/04-header-icon-blog.png" alt="blog">
-                <a href="">Blog</a>
+                <a href="#">Blog</a>
             </div>
             <div class="menu__item">
                 <img src="img/06-header-icon-order.png" alt="order">
-                <a href="">Ordering images</a>
+                <a href="#">Ordering images</a>
             </div>
         </div>
     </nav>
@@ -133,53 +133,58 @@
 <section class="search-section">
     <div class="search-block">
         <div class="selection-search">
-            <div class="image-search-form">
-                <p>Image Search</p>
-                <div class="image-search-fields">
-                    <form action="">
-                        <label class="selects-type">
-                            <select name="Type">
-                                <option value="type">Type</option>
-                                <option value="value2">Значение 2</option>
-                                <option value="value3">Значение 3</option>
-                            </select>
-                        </label>
-                        <label class="selects-category">
-                            <select name="Category">
-                                <option value="category">Category</option>
-                                <option value="value2">Значение 2</option>
-                                <option value="value3">Значение 3</option>
-                            </select>
-                        </label>
-                        <label class="selects-author">
-                            <select name="Author">
-                                <option value="author">Author</option>
-                                <option value="value2">Значение 2</option>
-                                <option value="value3">Значение 3</option>
-                            </select>
-                        </label>
-                        <label class="selects-color">
-                            <select name="Color">
-                                <option value="color">Color</option>
-                                <option value="value2">Значение 2</option>
-                                <option value="value3">Значение 3</option>
-                            </select>
-                        </label>
-                        <input type="checkbox" name="sale" id="sale" class="sale">
-                        <span>Sale %</span>
-                    </form>
-                </div>
+
+            <p class="image-search-title">Image Search</p>
+            <div class="image-search-fields">
+                <form action="#">
+                    <label class="selects">
+                        <select name="Type">
+                            <option value="type">Type</option>
+                            <option value="value2">Значение 2</option>
+                            <option value="value3">Значение 3</option>
+                        </select>
+                    </label>
+                    <label class="selects">
+                        <select name="Category">
+                            <option value="category">Category</option>
+                            <option value="value2">Значение 2</option>
+                            <option value="value3">Значение 3</option>
+                        </select>
+                    </label>
+                    <label class="selects">
+                        <select name="Author">
+                            <option value="author">Author</option>
+                            <option value="value2">Значение 2</option>
+                            <option value="value3">Значение 3</option>
+                        </select>
+                    </label>
+                    <label class="selects">
+                        <select name="Color">
+                            <option value="color">Color</option>
+                            <option value="value2">Значение 2</option>
+                            <option value="value3">Значение 3</option>
+                        </select>
+                    </label>
+                    <input type="checkbox" name="sale" id="sale" class="sale">
+                    <span class="sale-span">Sale %</span>
+                </form>
+            </div>
+
+            <div>
+                <p class="catalog-link-mobile">
+                    <a href="#">Go to the catalog page</a>
+                </p>
             </div>
         </div>
         <div class="manual-search">
-            <p>
-                <a href="">Go to the catalog page</a>
+            <p class="catalog-link-desktop">
+                <a href="#">Go to the catalog page</a>
             </p>
             <div class="manual-search-block">
                 <div class="input-search">
                     <label class="manual-search-input">
                         <input type="search" autocomplete="on" placeholder="Search by keywords or authors"/>
-                        <img src="img/search-icon.png" alt="search">
+                        <img src="/img/search-icon.png" alt="search">
                     </label>
                 </div>
                 <button class="search-button">Search</button>
@@ -202,7 +207,7 @@
                 <!--                Card Item-->
                 <div class="card-block">
                     <div class="card-img">
-                        <a href="">
+                        <a href="#">
                             <img src="img/preview1.png" alt="preview">
                         </a>
                     </div>
@@ -277,8 +282,8 @@
             </div>
             <!--                RIGHT-->
             <div class="right-cards">
-                <a href="">
-                    <img src="img/post_editor.png" alt="">
+                <a href="#">
+                    <img src="img/post_editor.png" alt="post-editor">
                 </a>
             </div>
         </div>
@@ -450,8 +455,8 @@
             </div>
             <!--                RIGHT-->
             <div class="right-cards">
-                <a href="">
-                    <img src="img/post_editor.png" alt="">
+                <a href="#">
+                    <img src="img/post_editor.png" alt="post-editor">
                 </a>
             </div>
         </div>
@@ -469,12 +474,12 @@
 <section class="banner-section">
     <div class="banner-block">
         <div class="left-banner">
-            <a href="">
+            <a href="#">
                 <img src="img/banner-left.png" alt="banner">
             </a>
         </div>
         <div class="right-banner">
-            <a href="">
+            <a href="#">
                 <img src="img/banner-right.png" alt="banner">
             </a>
         </div>
