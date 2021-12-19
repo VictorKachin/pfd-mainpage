@@ -1,4 +1,4 @@
-.image-section {
+.images-section {
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -26,6 +26,7 @@
 .left-cards {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 1.5em;
 
 }
 
@@ -77,5 +78,26 @@
     color: white;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+@media (max-width: 1430px) {
+    .sort-select {
+        margin-left: 10px;
+    }
+
+    .left-cards {
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 6%;
+        margin-right: 2%;
+    }
+
+    .card-block {
+        margin-right: 0;
+    }
+
+    .images-cards {
+        margin: 0 10px;
+    }
 }
 
