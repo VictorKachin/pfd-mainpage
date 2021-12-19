@@ -5,7 +5,8 @@ header {
     justify-content: space-between;
     align-items: center;
     /*position: fixed;*/
-    margin: 2em 1em auto;
+    margin: 1em auto;
+    padding: 0 10px;
     /*column-gap: 10px;*/
     row-gap: 10px;
     grid-template-areas:
@@ -148,8 +149,16 @@ header {
 
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1350px) {
 
+    .menu__item:last-child {
+        width: min-content;
+
+    }
+
+    .cart img {
+        margin-right: 8px;
+    }
 }
 
 @media (max-width: 1220px) {
@@ -179,6 +188,7 @@ header {
     }
 
     .menu__item:last-child {
+        width: auto;
         border-right: none;
     }
 
