@@ -1,5 +1,5 @@
 .carousel {
-    width: 1430px;
+    max-width: 1430px;
     margin: 30px auto;
     padding-bottom: 22px;
     background-color: #F2F2F2;
@@ -117,4 +117,8 @@
 
 .next {
     margin-right: 10px;
+}
+
+@media (max-width: 1430px) {
+
 }
