@@ -2,9 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: var(--light-grayish-blue);
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    /*height: 100vh;*/
     margin: 0;
 }
 
