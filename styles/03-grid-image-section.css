@@ -1,9 +1,41 @@
+.sort-filter {
+    max-width: 1430px;
+    margin: 0 auto 1.5em;
+    position: relative;
+}
+
+.sort-filter img {
+    width: 12px;
+    height: 6px;
+    margin-left: 8px;
+}
+
+.sort, .filter {
+    font-size: 18px;
+    line-height: 24px;
+    color: #273841;
+}
+
+.sort-block {
+    display: flex;
+    align-items: center;
+}
+
+.filter-block {
+    display: none;
+}
+
 .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     /*height: 100vh;*/
     margin: 0;
+}
+
+.sort-filter {
+    display: flex;
+    justify-content: space-between;
 }
 
 .container {
@@ -138,6 +170,12 @@
 }
 
 @media (max-width: 910px) {
+
+    .filter-block {
+        display: flex;
+        align-items: center;
+    }
+
     .container {
         grid-template-columns: repeat(4, 170px);
         grid-template-rows: repeat(3, 210px);

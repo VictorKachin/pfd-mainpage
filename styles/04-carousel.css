@@ -18,13 +18,13 @@
 }
 
 .carousel-start,
-.-card {
+.card {
     background: #F8F8F8;
     border: 1px solid #D4E0E7;
     box-sizing: border-box;
     border-radius: 3px;
     margin: 22px;
-    padding: 10px;
+    padding: 10px 12px 12px;
 }
 
 .carousel-start {
@@ -33,8 +33,10 @@
 }
 
 .carousel-card {
-    width: 320px;
+    width: 312px;
     height: 170px;
+    background-color: white;
+    padding: 10px;
 }
 
 .heading-card {
@@ -64,7 +66,7 @@
 
 .carousel-card-images {
     display: flex;
-    column-gap: 6px;
+    column-gap: 8px;
     justify-content: space-between;
     align-items: stretch;
     margin-top: 0;
@@ -117,6 +119,15 @@
     margin-right: 10px;
 }
 
-@media (max-width: 1430px) {
-
+@media (max-width: 1320px) {
+    .card-3 {
+        display: none;
+    }
 }
+
+@media (max-width: 910px) {
+    .card-2 {
+        display: none;
+    }
+}
+
