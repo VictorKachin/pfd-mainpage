@@ -97,6 +97,7 @@
 
     /* testimonial cards LAYOUT */
 
+
     .card-block-5 {
         grid-column: 1;
     }
@@ -115,14 +116,14 @@
     }
 
     .card-block-11 {
-        display: block;
+        display: flex;
         grid-column: 3;
     }
 
     .card-block-12,
     .card-block-13,
     .card-block-14 {
-        display: block;
+        display: flex;
     }
 }
 
@@ -224,6 +225,5 @@
     .card-block-12,
     .card-block-13,
     .card-block-14 {
-        display: none;
     }
 }
