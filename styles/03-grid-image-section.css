@@ -225,5 +225,6 @@
     .card-block-12,
     .card-block-13,
     .card-block-14 {
+        display: none;
     }
 }
