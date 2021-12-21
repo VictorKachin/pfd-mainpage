@@ -49,6 +49,38 @@
     align-items: center;
 }
 
+@media (max-width: 1125px) {
+    .subscribe-block {
+        height: 160px;
+        flex-direction: column;
+    }
+
+    .envelope {
+        width: 90%;
+        margin-top: -2em;
+    }
+
+    .text-subscribe {
+        margin-left: -110px;
+    }
+
+    .subscribe-right {
+        width: 90%;
+        margin-top: -2em;
+        padding-bottom: 2em;
+
+    }
+
+    .email input  {
+        width: 90%;
+    }
+
+    .show-more-btn {
+        margin: 0;
+    }
+
+
+}
 
 
 
