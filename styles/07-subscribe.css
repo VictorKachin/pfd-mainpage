@@ -57,7 +57,7 @@
 
     .envelope {
         width: 90%;
-        margin-top: -2em;
+        margin-top: -3.5em;
     }
 
     .text-subscribe {
@@ -66,8 +66,8 @@
 
     .subscribe-right {
         width: 90%;
-        margin-top: -2em;
-        padding-bottom: 2em;
+        margin-top: -3.5em;
+        /*padding-bottom: 1em;*/
 
     }
 
@@ -78,8 +78,6 @@
     .show-more-btn {
         margin: 0;
     }
-
-
 }
 
 
