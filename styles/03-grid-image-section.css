@@ -80,12 +80,28 @@
     grid-row: 1 / span 2;
 }
 
+.right-cards img {
+    max-width: 370px;
+    overflow: hidden;
+}
+
 .card-block-11,
     .card-block-12,
     .card-block-13,
     .card-block-14
 {
     display: none;
+}
+
+@media (max-width: 1430px) {
+
+    .sort-filter {
+        padding: 0 10px;
+    }
+
+    .wrapper {
+        padding: 0 10px;
+    }
 }
 
 @media (max-width: 1320px) {

@@ -4,10 +4,7 @@ header {
     display: grid;
     justify-content: space-between;
     align-items: center;
-    /*position: fixed;*/
     margin: 1em auto;
-    padding: 0 10px;
-    /*column-gap: 10px;*/
     row-gap: 10px;
     grid-template-areas:
             "A B C"
@@ -90,7 +87,6 @@ header {
     grid-area: C;
 }
 
-
 .cart a {
     text-decoration: none;
     color: #2B91D7;
@@ -144,16 +140,16 @@ header {
     display: none;
 }
 
-
-@media (max-width: 1441px) {
-
+@media (max-width: 1430px) {
+    header {
+        padding: 0 10px;
+    }
 }
 
 @media (max-width: 1350px) {
 
     .menu__item:last-child {
         width: min-content;
-
     }
 
     .cart img {

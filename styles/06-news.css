@@ -9,10 +9,6 @@
 .news-block {
     width: 1430px;
     padding: 40px 0 24px 0;
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-    /*align-items: center;*/
-    /*align-content: space-around;*/
 }
 
 .news-block-title {
@@ -62,11 +58,6 @@
     display: none;
 }
 
-/*.new-item-5 {*/
-/*    width: 340px;*/
-/*    height: 282px;*/
-/*}*/
-
 .news-card-title {
     font-weight: 600;
     font-size: 17px;
@@ -108,6 +99,12 @@
     color: white;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+@media (max-width: 1430px) {
+    .news-section {
+        padding: 0 10px;
+    }
 }
 
 @media (max-width: 1350px) {

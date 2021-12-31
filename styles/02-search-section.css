@@ -31,7 +31,6 @@
     justify-content: space-between;
     align-items: center;
     align-content: space-around;
-    margin: 0 10px;
 }
 
 .image-search-fields select {
@@ -103,6 +102,12 @@
     position: absolute;
     right: 12%;
     top: 34%;
+}
+
+@media (max-width: 1430px) {
+    .search-block {
+        padding: 16px 10px 24px 10px;
+    }
 }
 
 @media (max-width: 1370px) {

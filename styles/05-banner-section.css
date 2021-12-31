@@ -20,6 +20,12 @@
     justify-content: space-between;
 }
 
+@media (max-width: 1430px) {
+    .banner-section {
+        padding: 0 10px;
+    }
+}
+
 @media (max-width: 1350px) {
 
     .banner-block {
