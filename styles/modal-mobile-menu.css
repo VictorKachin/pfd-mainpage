@@ -17,18 +17,6 @@
     transform: scale(1, 1)
 }
 
-/*.nav-burger:checked ~ .nav-modal a, .nav-modal li, .nav-modal div span {*/
-/*    opacity: 1;*/
-/*}*/
-
-/*.nav-burger:checked ~ .nav-modal li {*/
-/*    opacity: 1;*/
-/*}*/
-
-/*.nav-burger:checked ~ .nav-modal div span {*/
-/*    opacity: 1;*/
-/*}*/
-
 .nav-burger-lines {
     bottom: 10px;
     left: 13px;
@@ -132,7 +120,6 @@
     position: relative;
 }
 
-
 .shop-menu-item a {
     line-height: 60px;
     margin-left: 10px;
@@ -142,6 +129,7 @@
     position: absolute;
     top: 10px;
 }
+
 
 @media (max-width: 768px) {
     .nav-burger {
@@ -177,6 +165,3 @@
         width: 100%;
     }
 }
-
-
-/*MODAL Navigation Menu - END*/

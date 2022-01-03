@@ -3,8 +3,8 @@ header {
     height: 92px;
     display: grid;
     justify-content: space-between;
-    align-items: center;
-    margin: 1em auto;
+    align-items: end;
+    margin: 0 auto;
     row-gap: 10px;
     grid-template-areas:
             "A B C"
@@ -37,7 +37,7 @@ header {
 
 .menu__item {
     height: 48px;
-    padding: 0 20px;
+    padding: 0 10px;
     display: flex;
     align-items: center;
     border-left: solid 1px #D4E0E7;
@@ -85,6 +85,10 @@ header {
     justify-content: space-between;
     cursor: pointer;
     grid-area: C;
+}
+
+.cart img {
+    margin-right: 12px;
 }
 
 .cart a {
@@ -152,9 +156,6 @@ header {
         width: min-content;
     }
 
-    .cart img {
-        margin-right: 8px;
-    }
 }
 
 @media (max-width: 1220px) {
