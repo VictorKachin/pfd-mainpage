@@ -36,6 +36,7 @@
 .image-search-fields {
     width: 100%;
     display: flex;
+    align-items: center;
 }
 
 /*!!!!*/
@@ -47,7 +48,7 @@ select {
     /* Personalize */
     flex: 1;
     padding: 0 1em;
-    font-size: 14px;
+    font-size: 16px;
     color: #232221;
     background-image: none;
     cursor: pointer;
@@ -201,12 +202,20 @@ option {
 
 @media (max-width: 1070px) {
 
-    .image-search-fields {
-        flex: 90%;
+    .search-block {
+        /*padding: 16px 10px 0 10px;*/
     }
 
-    .selects select {
-        margin-bottom: 20px;
+    .image-search-fields {
+        flex: 90%;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .selects {
+        width: 172px;
+        /*height: 60px;*/
+        margin-right: 6px;
     }
 
     .sale, .sale-span {

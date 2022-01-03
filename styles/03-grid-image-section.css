@@ -4,18 +4,6 @@
     position: relative;
 }
 
-.sort-filter img {
-    width: 12px;
-    height: 6px;
-    margin-left: 8px;
-}
-
-.sort, .filter {
-    font-size: 18px;
-    line-height: 24px;
-    color: #273841;
-}
-
 .sort-block {
     display: flex;
     align-items: center;
@@ -24,6 +12,83 @@
 .filter-block {
     display: none;
 }
+
+/*!!!*/
+.selects-sort select {
+    /* Reset Select */
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 0 1em 0 0;
+    font-size: 16px;
+    color: #232221;
+    background-image: none;
+    cursor: pointer;
+    border: none;
+}
+
+.selects-filter select {
+    /* Reset Select */
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    font-size: 16px;
+    color: #232221;
+    background-image: none;
+    cursor: pointer;
+    border: none;
+}
+
+/* Custom Select wrapper */
+.selects-sort,
+.selects-filter {
+    position: relative;
+    display: flex;
+    height: 38px;
+    overflow: hidden;
+}
+
+.selects-sort {
+    width: 9em;
+}
+
+.selects-filter {
+    width: 8em;
+}
+
+/* Arrow */
+.selects-sort::after,
+.selects-filter::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    transition: .25s all ease;
+    pointer-events: none;
+    background-image: url("/img/arrow-blue-down.png");
+    background-repeat: no-repeat;
+}
+
+.selects-sort::after {
+    right: 24px;
+    padding: 1em;
+}
+
+.selects-filter::after {
+    right: -10px;
+    padding: 14px;
+}
+
+option {
+    background-color: transparent;
+    padding: 1em;
+    font-size: 14px;
+    color: #232221;
+}
+/*!!!*/
 
 .wrapper {
     display: flex;
@@ -189,6 +254,7 @@
 @media (max-width: 910px) {
 
     .filter-block {
+        /*width: 80px;*/
         display: flex;
         align-items: center;
     }

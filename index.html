@@ -145,13 +145,13 @@
 
       <p class="image-search-title">Image Search</p>
       <div class="image-search-fields">
-          <div class="selects">
-            <select>
+          <label class="selects">
+            <select name="Type">
               <option value="1">Type</option>
               <option value="2">Значение 1</option>
               <option value="3">Значение 2</option>
             </select>
-          </div>
+          </label>
 
           <label class="selects">
             <select name="Category">
@@ -206,13 +206,25 @@
 <!--IMAGE Block 1 - START-->
 <div class="sort-filter">
   <div class="sort-block">
-    <p class="sort">Sort</p>
-    <img class="" src="./img/arrow-blue-down.png" alt="sort">
+
+    <label class="selects-sort">
+      <select name="Sort">
+        <option value="1">Sort</option>
+        <option value="2">Значение 1</option>
+        <option value="3">Значение 2</option>
+      </select>
+    </label>
+
   </div>
 
   <div class="filter-block">
-    <p class="filter">Filter</p>
-    <img src="./img/arrow-blue-down.png" alt="filter">
+    <label class="selects-filter">
+      <select name="Filter">
+        <option value="1">Filter</option>
+        <option value="2">Значение 1</option>
+        <option value="3">Значение 2</option>
+      </select>
+    </label>
   </div>
 
 </div>
