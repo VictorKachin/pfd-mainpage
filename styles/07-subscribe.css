@@ -1,4 +1,4 @@
-.subscribe {
+.subscribe-form {
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -31,7 +31,6 @@
     margin-bottom: 14px;
     margin-right: 0;
 }
-
 
 .text-subscribe {
     width: 448px;

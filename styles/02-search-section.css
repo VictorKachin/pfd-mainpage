@@ -155,6 +155,7 @@ option {
 
 @media (max-width: 1370px) {
     .search-block {
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
