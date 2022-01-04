@@ -76,11 +76,12 @@
 }
 
 /*Конкретный слайдер*/
-.wrapper-slider {
+.wrapper-slider  {
     max-width: 1430px;
     margin: 30px auto;
     background-color: #F2F2F2;
     padding: 22px 10px;
+    position: relative;
 }
 
 .slider {
@@ -238,8 +239,8 @@
     margin-right: 0;
 }
 
-@media (max-width: 1350px) {
-    .wrapper-slider {
-        display: none;
-    }
-}
+/*@media (max-width: 1350px) {*/
+/*    .wrapper-slider {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
