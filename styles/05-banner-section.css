@@ -6,19 +6,22 @@
 }
 
 .banner-block {
-    max-width: 1430px;
+    width: 1430px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 30px;
 }
+
+/*.left-banner {*/
+/*    flex: 50%;*/
+/*}*/
 
 .left-banner img, .right-banner img{
     width: 670px;
     height: 280px;
 }
 
-.banner-block {
-    width: 1430px;
-    display: flex;
-    justify-content: space-between;
-}
+
 
 @media (max-width: 1430px) {
     .banner-section {
