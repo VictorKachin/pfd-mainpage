@@ -181,6 +181,12 @@ option {
     justify-content: space-between;
 }
 
+.price {
+    font-weight: 600;
+    font-size: 16px;
+    color: #232221;
+}
+
 .like-cart {
     width: 35%;
     display: flex;
