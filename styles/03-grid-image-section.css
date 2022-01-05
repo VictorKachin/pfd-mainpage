@@ -90,7 +90,6 @@ option {
 }
 
 /*!!!*/
-
 .wrapper {
     display: flex;
     justify-content: center;
@@ -148,9 +147,7 @@ option {
     height: 32px;
     background: #E85B96;
     border-radius: 0 5px 0 0;
-
 }
-
 
 .exclusive .card-img {
     border: 6px solid #FFBA00;
