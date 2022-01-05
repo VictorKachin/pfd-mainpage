@@ -102,14 +102,14 @@
 
 .slider .slick-arrow.slick-prev {
     left: 0;
-    background: url("../img/arrow-violet-right.png") 0 0 / 100% no-repeat;
+    background: url("../images/main/img/arrow-violet-right.png") 0 0 / 100% no-repeat;
     transform: rotate(180deg);
     cursor: pointer;
 }
 
 .slider .slick-arrow.slick-next {
     right: 0;
-    background: url("../img/arrow-violet-right.png") 0 0 / 100% no-repeat;
+    background: url("../images/main/img/arrow-violet-right.png") 0 0 / 100% no-repeat;
     cursor: pointer;
 }
 

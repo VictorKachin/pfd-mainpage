@@ -222,7 +222,7 @@ footer {
     details > summary::after {
         position: absolute;
         content: "";
-        background: url("../img/arrow-footer-down.png") no-repeat;
+        background: url("../images/main/img/arrow-footer-down.png") no-repeat;
         width: 16px;
         height: 9px;
         right: 25px;
@@ -232,7 +232,7 @@ footer {
     details[open] > summary::after {
         position: absolute;
         content: "";
-        background: url("../img/arrow-footer-up.png") no-repeat;
+        background: url("../images/main/img/arrow-footer-up.png") no-repeat;
         width: 16px;
         height: 9px;
         right: 25px;

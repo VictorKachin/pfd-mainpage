@@ -68,7 +68,7 @@
     top: 15px;
     transition: .25s all ease;
     pointer-events: none;
-    background-image: url("/img/arrow-blue-down.png");
+    background-image: url("/images/main/img/arrow-blue-down.png");
     background-repeat: no-repeat;
 }
 
@@ -123,14 +123,41 @@ option {
     justify-content: space-between;
 }
 
+.card-img {
+    width: 170px;
+    height: 170px;
+}
+
+.exclusive .card-img {
+    border: 6px solid #FFBA00;
+    border-radius: 9px;
+}
+
+
+
+.exclusive .like-cart {
+    display: contents;
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.card-img.exclusive img {
+    width: 101%;
+}
+
 .card-footer {
     display: flex;
     justify-content: space-between;
 }
 
-.card-footer img {
-    margin-right: 0;
+.like-cart {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
 }
+
 
 /* testimonial cards LAYOUT */
 .card-block-1 {
@@ -264,15 +291,10 @@ option {
         /*grid-row-gap: 1.5em;*/
     }
 
-    .testimonial {
-        width: 154px;
-        height: 190px;
-    }
-
-    .card-img img {
-        width: 100%;
-    }
-
+    /*.testimonial {*/
+    /*    width: 154px;*/
+    /*    height: 190px;*/
+    /*}*/
     /* testimonial cards LAYOUT */
     .card-block-3 {
         grid-column: 1;
@@ -317,6 +339,17 @@ option {
     .container {
         grid-row-gap: 0;
     }
+
+    .testimonial {
+        width: 154px;
+        height: 190px;
+    }
+
+    .card-img {
+        width: 154px;
+        height: 154px;
+    }
+
     .right-cards img {
         max-width: 340px;
     }
@@ -363,11 +396,17 @@ option {
         display: flex;
         justify-content: center;
         row-gap: 1em;
+        column-gap: 1em;
     }
 
     .testimonial {
         width: 140px;
-        height: 176px;
+        height: 180px;
+    }
+
+    .card-img {
+        width: 140px;
+        height: 140px;
     }
 
     .card-block-5,
