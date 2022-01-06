@@ -120,11 +120,14 @@
     border-bottom: 1px solid #979797;
     margin-bottom: 26px;
     position: relative;
+    color: #979797;
+    line-height: 60px;
+    /*cursor: none;*/
 }
 
 .shop-menu-item a {
-    line-height: 60px;
-    margin-left: 10px;
+
+    /*margin-left: 10px;*/
 }
 
 .shop-menu-item span {

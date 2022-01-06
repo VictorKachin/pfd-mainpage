@@ -92,13 +92,22 @@ hr.style-line {
     margin: 18px 0 14px;
 }
 
-.profile-modal a {
+.profile-link {
     text-decoration: none;
     font-weight: normal;
     font-size: 16px;
     display: flex;
     align-items: center;
     color: #232221;
+}
+
+.profile-link:hover {
+    text-underline: #232221;
+}
+
+.profile-link:active {
+    text-decoration-line: underline;
+    color: #2B91D7
 }
 
 .profile-points {
