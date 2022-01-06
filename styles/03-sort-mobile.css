@@ -1,0 +1,119 @@
+.sort-menu {
+    display: none;
+}
+
+@media (max-width: 601px) {
+    /*div in IMAGE BLOCK 1*/
+    .selects-sort {
+        display: none;
+    }
+
+    /*sort menu*/
+    .sort-menu {
+        display: flex;
+        position: relative;
+        width: 80px;
+        /*height: 40px;*/
+    }
+
+    .sort-summary {
+        font-size: 18px;
+        list-style: none;
+    }
+
+    .sort-summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .sort-details > .sort-summary::marker {
+        display: none;
+    }
+
+    .sort-details[open] .sort-summary ~ * {
+        animation: smooth 0.4s ease-in-out;
+    }
+
+    @keyframes smooth {
+        0% {
+            opacity: 0;
+            margin-top: -10px;
+        }
+        100% {
+            opacity: 1;
+            margin-top: 0;
+        }
+    }
+
+    .sort-details > .sort-summary::after {
+        position: absolute;
+        content: "";
+        background: url("../images/main/img/arrow-blue-down.png") no-repeat;
+        width: 16px;
+        height: 9px;
+        left: 50%;
+        top: 40%;
+    }
+
+    .sort-details[open] > .sort-summary::after {
+        position: absolute;
+        content: "";
+        background: url("../images/main/img/arrow-footer-up.png") no-repeat;
+        width: 16px;
+        height: 9px;
+        right: 25px;
+        top: 40%;
+    }
+
+    .sort-details[open] > .sort-summary::after {
+        position: absolute;
+        content: "";
+        background: url("../images/main/img/arrow-footer-up.png") no-repeat;
+        width: 16px;
+        height: 9px;
+        right: 25px;
+        top: 40%;
+    }
+
+    .sort-choice {
+        position: absolute;
+        left: -10px;
+        top: 2em;
+        min-width: 322px;
+        padding: 20px 20px 12px;
+        background-color: white;
+        border: 1px solid #D4E0E7;
+        filter: drop-shadow(0px 4px 12px rgba(90, 96, 99, 0.3));
+        z-index: 10;
+    }
+
+    .sort-list-item {
+        list-style: none;
+        padding-bottom: 10px;
+    }
+
+    .sort-list-link {
+        text-decoration: none;
+        font-size: 16px;
+        color: #232221;
+    }
+
+    .sort-list-link:hover {
+        text-decoration-line: underline;
+    }
+
+    .sort-list-link:active {
+        text-decoration-line: underline;
+        color: #2B91D7;
+    }
+
+
+    /*hr.style-line {*/
+    /*    border: 0;*/
+    /*    height: 1px;*/
+    /*    background: #D4E0E7;*/
+    /*    margin: 10px 0 14px;*/
+    /*}*/
+
+    /*LOGIN STYLES END */
+}
+

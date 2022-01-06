@@ -188,22 +188,21 @@ header {
     height: 40px;
 }
 
-summary {
+.profile-summary {
     list-style: none;
 }
 
-summary::-webkit-details-marker {
+.profile-summary::-webkit-details-marker {
     display: none;
 }
 
-details > summary::marker {
+.profile-details > .profile-summary::marker {
     display: none;
 }
 
-details[open] summary ~ * {
+.profile-details[open] .profile-summary ~ * {
     animation: smooth 0.4s ease-in-out;
 }
-
 
 @keyframes smooth {
     0% {
@@ -216,7 +215,7 @@ details[open] summary ~ * {
     }
 }
 
-details > summary::after {
+.profile-details > .profile-summary::after {
     position: absolute;
     content: "";
     background: url("../images/main/img/arrow-blue-down.png") no-repeat;
@@ -226,7 +225,7 @@ details > summary::after {
     top: 40%;
 }
 
-details[open] > summary::after {
+.profile-details[open] > .profile-summary::after {
     position: absolute;
     content: "";
     background: url("../images/main/img/arrow-footer-up.png") no-repeat;

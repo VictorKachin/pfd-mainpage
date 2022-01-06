@@ -200,7 +200,11 @@ footer {
     }
 
 
-    details > summary::marker {
+    details > summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .summary::-webkit-details-marker {
         display: none;
     }
 
