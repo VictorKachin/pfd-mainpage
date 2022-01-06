@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/01-header.css">
   <link rel="stylesheet" href="styles/modal-mobile-menu.css">
+  <link rel="stylesheet" href="styles/modal-mobile-profile.css">
+
   <link rel="stylesheet" href="styles/02-search-section.css">
   <link rel="stylesheet" href="styles/03-grid-image-section.css">
   <link rel="stylesheet" href="styles/03-sort-mobile.css">
@@ -39,6 +41,7 @@
 <!--GRID variant - start -->
 <header>
   <div class="logo-block">
+
     <div class="nav-burger-block">
       <input id="nav-burger" class="nav-burger" type="checkbox">
       <div class="nav-burger-lines"></div>
@@ -66,13 +69,45 @@
       </div>
       <!--MODAL Navigation Menu - END-->
     </div>
+
     <div class="logo">
       <img src="/images/main/img/logo.png" alt="logo">
     </div>
-    <div class="login-mobile">
-      <img src="/images/main/img/icon-login.png" alt="login">
+
+<!--    <div class="login-mobile">-->
+<!--      <img src="/images/main/img/icon-login.png" alt="login">-->
+<!--    </div>-->
+
+    <div class="profile-burger-block">
+      <input id="profile-burger" class="profile-burger" type="checkbox">
+<!--      visible icon-->
+      <div class="profile-burger-lines">
+        <img src="/images/main/img/icon-login.png" alt="login">
+      </div>
+
+      <!--MODAL PROFILE Menu - START-->
+      <div class="profile-modal">
+        <label for="profile-burger" class="profile-burger-label">
+                <span>
+                    <img class="close-cross" src="/images/main/img/close-modal-menu.png" alt="close">
+                </span>
+        </label>
+        <ul>
+          <li><a href="#">Exclusive club</a></li>
+          <li><a href="#">Prepaid projects</a></li>
+          <li><a href="#">Post editor</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Shopping cart</a></li>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Quests</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <!--MODAL Navigation Menu - END-->
     </div>
+
   </div>
+
   <!--NAV Menu links DESKTOP - START-->
   <nav class="nav-desktop">
     <div class="menu">

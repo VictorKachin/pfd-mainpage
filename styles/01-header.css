@@ -274,7 +274,6 @@ header {
     color: #2B91D7;
 }
 
-
 hr.style-line {
     border: 0;
     height: 1px;
@@ -394,6 +393,7 @@ hr.style-line {
     .login {
         width: 144px;
     }
+
 }
 
 @media (max-width: 611px) {
@@ -420,6 +420,10 @@ hr.style-line {
 
     .login-mobile {
         display: flex;
+    }
+
+    .profile-burger {
+        display: block;
     }
 
 }
