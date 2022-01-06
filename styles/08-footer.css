@@ -84,6 +84,15 @@ footer {
     color: #B7BFC3;
 }
 
+.footer-links-column a:hover {
+    text-decoration-line: underline;
+}
+
+.footer-links-column a:focus {
+    color: #E4E5E6;
+    text-decoration-line: underline;
+}
+
 .footer-footer {
     display: flex;
     flex-direction: row;
@@ -129,7 +138,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-
     .footer-links {
         align-items: center;
     }
@@ -254,7 +262,8 @@ footer {
         row-gap: 12px;
     }
 
-    .social-block {
-        display: none;
+    .footer-header {
+        flex-direction: column;
+        row-gap: 20px;
     }
 }
