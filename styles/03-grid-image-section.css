@@ -2,11 +2,9 @@
     max-width: 1430px;
     margin: 0 auto 1.5em;
     position: relative;
-}
-
-.sort-block {
     display: flex;
-    align-items: center;
+    /*justify-content: space-between;*/
+    justify-content: center;
 }
 
 .filter-block {
@@ -14,20 +12,6 @@
 }
 
 /*!!!*/
-.selects-sort select {
-    /* Reset Select */
-    appearance: none;
-    outline: 0;
-    box-shadow: none;
-    /* Personalize */
-    flex: 1;
-    padding: 0 1em 0 0;
-    font-size: 16px;
-    color: #232221;
-    background-image: none;
-    cursor: pointer;
-    border: none;
-}
 
 .selects-filter select {
     /* Reset Select */
@@ -44,7 +28,6 @@
 }
 
 /* Custom Select wrapper */
-.selects-sort,
 .selects-filter {
     position: relative;
     display: flex;
@@ -52,16 +35,11 @@
     overflow: hidden;
 }
 
-.selects-sort {
-    width: 9em;
-}
-
 .selects-filter {
     width: 8em;
 }
 
 /* Arrow */
-.selects-sort::after,
 .selects-filter::after {
     content: '';
     position: absolute;
@@ -70,11 +48,6 @@
     pointer-events: none;
     background-image: url("/images/main/img/arrow-blue-down.png");
     background-repeat: no-repeat;
-}
-
-.selects-sort::after {
-    right: 24px;
-    padding: 1em;
 }
 
 .selects-filter::after {
@@ -98,10 +71,6 @@ option {
     margin: 0;
 }
 
-.sort-filter {
-    display: flex;
-    justify-content: space-between;
-}
 
 .container {
     width: 1430px;
@@ -147,7 +116,7 @@ option {
     font-size: 16px;
     font-weight: 600;
     color: #FFFFFF;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .sale-card .card-img::after {
@@ -248,7 +217,6 @@ option {
 }
 
 @media (max-width: 1320px) {
-
     .container {
         grid-template-columns: repeat(6, 170px);
         grid-template-rows: repeat(3, 210px);
@@ -285,7 +253,6 @@ option {
 }
 
 @media (max-width: 1025px) {
-
     .container {
         grid-template-columns: repeat(5, 170px);
         grid-template-rows: repeat(3, 210px);
