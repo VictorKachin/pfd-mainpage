@@ -306,6 +306,10 @@ hr.style-line {
     display: none;
 }
 
+.profile-burger-block {
+    display: none;
+}
+
 @media (max-width: 1430px) {
     header {
         padding: 0 10px;
@@ -422,7 +426,7 @@ hr.style-line {
         display: flex;
     }
 
-    .profile-burger {
+    .profile-burger-block {
         display: block;
     }
 

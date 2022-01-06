@@ -1,6 +1,7 @@
 /*MODAL profile Menu - START*/
 .profile-burger-block {
     position: relative;
+    margin-top: 0.5em;
 }
 
 .profile-burger {
@@ -33,9 +34,9 @@
 }
 
 .profile-modal {
-    width: 400px;
+    width: 100vw;
     height: 100vh;
-    background-color: #273841;
+    background-color: #FFFFFF;
     position: fixed;
     padding: 0 30px;
     top: 0;
@@ -43,30 +44,66 @@
     /*display: none;*/
     z-index: 99;
     transform: scale(0, 1);
-    transform-origin: left;
+    transform-origin: right;
     transition: transform 400ms ease-in-out;
 }
 
-.close-cross {
-    margin: 30px;
+.profile-burger-label {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile-close {
+    text-align: right;
+    padding: 20px;
     cursor: pointer;
+}
+
+.profile-logo {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.profile-photo {
+    width: 48px;
+    height: 48px;
+    margin-right: 1em;
+    border-radius: 50%;
+    background: #F2F2F2;
+    border: 2px solid #EBECEE;
+}
+
+.profile-name-mail {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-user,
+.email-user {
+    text-decoration: none;
+    font-size: 16px;
+    color: #2B91D7;
+}
+
+hr.style-line {
+    border: 0;
+    height: 1px;
+    background: #D4E0E7;
+    margin: 18px 0 14px;
 }
 
 .profile-modal a {
     text-decoration: none;
-    font-weight: 600;
+    font-weight: normal;
     font-size: 16px;
-    line-height: 24px;
-    color: white;
-    position: relative;
-    /*opacity: 0;*/
+    display: flex;
+    align-items: center;
+    color: #232221;
 }
 
-.profile-modal li {
+.profile-points {
     margin-bottom: 26px;
-    margin-left: 10px;
     list-style: none;
-    /*opacity: 0;*/
 }
 
 .profile-modal div span {
@@ -131,8 +168,8 @@
 
 @media (max-width: 611px) {
     .profile-burger {
-        margin-right: 8px;
         display: block;
+        position: absolute;
     }
 
     .profile-burger-lines,
@@ -141,21 +178,19 @@
         display: block;
     }
 
-    .profile-burger-lines::before,
-    .profile-burger-lines::after {
-        content: "";
-        position: absolute;
-    }
-
-    .profile-burger-lines::before {
-        height: 2px;
-        bottom: 12px;
-    }
-
-    .profile-burger-lines::after {
-        height: 2px;
-        bottom: 6px;
-    }
+    /*.profile-burger-lines::before,*/
+    /*.profile-burger-lines::after {*/
+    /*    content: "";*/
+    /*    position: absolute;*/
+    /*}*/
+    /*.profile-burger-lines::before {*/
+    /*    height: 2px;*/
+    /*    bottom: 12px;*/
+    /*}*/
+    /*.profile-burger-lines::after {*/
+    /*    height: 2px;*/
+    /*    bottom: 6px;*/
+    /*}*/
 }
 
 @media (max-width: 500px) {
