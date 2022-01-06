@@ -76,7 +76,7 @@
 }
 
 /*Конкретный слайдер*/
-.wrapper-slider  {
+.wrapper-slider {
     max-width: 1430px;
     margin: 30px auto;
     background-color: #F2F2F2;
@@ -244,3 +244,15 @@
 /*        display: none;*/
 /*    }*/
 /*}*/
+
+@media (max-width: 360px) {
+    .carousel-card-images {
+        width: 230px;
+        margin: 0 auto;
+    }
+
+    .right-block-img.img6,
+    .right-block-img.img7 {
+        display: none;
+    }
+}
