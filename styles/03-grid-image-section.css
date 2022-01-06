@@ -126,6 +126,18 @@ option {
     width: 170px;
     height: 170px;
     position: relative;
+    background: lavender;
+    border-radius: 6px;
+}
+
+.card-img img {
+    width: 100%;
+    color: #E85B96;
+    font-size: 16px;
+    font-weight: bolder;
+    display: flex;
+    text-align: center;
+    line-height: 10em;
 }
 
 .percents {
@@ -164,12 +176,12 @@ option {
     background: url("/images/main/img/01-header-icon-crown.png") no-repeat center rgba(39, 56, 65, 0.8);
 }
 
-.exclusive .like-cart {
-    display: contents;
-}
-
-.card-img img {
-    width: 100%;
+.exclusive.like-cart {
+    /*display: contents;*/
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .card-img.exclusive img {
@@ -191,6 +203,7 @@ option {
     width: 35%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 
