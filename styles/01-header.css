@@ -363,7 +363,6 @@ hr.style-line {
 }
 
 @media (max-width: 768px) {
-
     .logo-block {
         /*margin: 0 10px 0 16px;*/
     }
@@ -371,10 +370,6 @@ hr.style-line {
     .logo, .logo img {
         width: 170px;
         height: 40px;
-    }
-
-    .cart {
-        margin-right: 16px;
     }
 
     .cart img {

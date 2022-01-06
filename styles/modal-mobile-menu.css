@@ -1,6 +1,8 @@
 /*MODAL Navigation Menu - START*/
 .nav-burger-block {
     position: relative;
+    margin-left: -10px;
+    margin-right: 12px;
 }
 
 .nav-burger {
