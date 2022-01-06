@@ -8,6 +8,7 @@ footer {
 .footer-content {
     width: 1430px;
     /*height: 384px;*/
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -143,7 +144,6 @@ footer {
     .outer {
         display: block;
     }
-
 
     .outer {
         width: 100%;
