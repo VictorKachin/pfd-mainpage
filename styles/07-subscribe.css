@@ -60,6 +60,20 @@
     cursor: pointer;
 }
 
+.subscribe-button:hover {
+    background-color: #00B9B9;
+}
+
+.subscribe-button:focus {
+    background-color: #00AFAF;
+    border: 2px solid #5BEDED;
+}
+
+.subscribe-button:active {
+    background-color: #00AFAF;
+}
+
+
 @media (max-width: 1125px) {
     .subscribe-block {
         height: 160px;

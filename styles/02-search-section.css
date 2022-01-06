@@ -139,6 +139,20 @@ option {
     border-radius: 3px;
     color: white;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background: #00B9B9;
+}
+
+.search-button:focus {
+    background-color: #00AFAF;
+    border: 2px solid #5BEDED;
+}
+
+.search-button:active {
+    background-color: #00AFAF;
 }
 
 .input-search {
