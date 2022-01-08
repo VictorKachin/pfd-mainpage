@@ -66,6 +66,11 @@ option {
 }
 
 /*!!!*/
+.roulette-mobile {
+    display: none;
+}
+
+
 .wrapper {
     display: flex;
     justify-content: center;
@@ -412,13 +417,13 @@ option {
         right: 0.5em;
     }
 
-
     .right-cards img {
         max-width: 340px;
     }
 }
 
 @media (max-width: 650px) {
+
     .container {
         display: flex;
         flex-direction: row;
@@ -467,6 +472,48 @@ option {
         column-gap: 1em;
     }
 
+    .roulette-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 1em;
+
+    }
+
+    .roulette-mobile-card {
+        background-color: #E5E3FF;
+        border-radius: 6px;
+        width: 296px;
+        height: 120px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .next-draw-mobile,
+    .next-date-mobile {
+        font-family: 'Atma', cursive;
+        font-size: 22px;
+        line-height: 30px;
+        color: #273841;
+        transform: rotate(-18deg);
+    }
+
+    .next-draw-mobile {
+        position: absolute;
+        width: 110px;
+        left: 22%;
+        top: 26%;
+    }
+
+    .next-date-mobile {
+        white-space: nowrap;
+    }
+
+    .roulette {
+        display: none;
+    }
+
     .testimonial {
         width: 140px;
         height: 180px;
@@ -477,12 +524,17 @@ option {
         height: 140px;
     }
 
-    .card-block-5,
     .card-block-6 {
         display: none;
     }
 
     .right-cards img {
         max-width: 310px;
+    }
+}
+
+@media (max-width: 325px) {
+    .next-draw-mobile {
+        left: 14%;
     }
 }
