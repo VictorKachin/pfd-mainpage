@@ -12,7 +12,7 @@
     .filter-menu {
         display: flex;
         position: relative;
-        width: 120px;
+        width: 90px;
         /*height: 40px;*/
     }
 
@@ -76,7 +76,7 @@
 
     .filter-choice {
         position: absolute;
-        right: -128%;
+        right: -170%;
         top: 2em;
         width: 425px;
         padding: 20px 20px 12px;
@@ -135,7 +135,7 @@
 
 @media (max-width: 425px) {
     .filter-choice {
-        left: -84%;
+        left: -128%;
         max-width: 320px;
     }
 }
