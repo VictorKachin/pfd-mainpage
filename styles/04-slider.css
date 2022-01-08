@@ -245,6 +245,12 @@
 /*    }*/
 /*}*/
 
+@media (max-width: 425px) {
+    .right-block-img {
+        margin-right: 6px;
+    }
+}
+
 @media (max-width: 360px) {
     .carousel-card-images {
         width: 230px;

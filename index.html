@@ -41,6 +41,8 @@
 <!--HEADER START-->
 <header>
   <div class="logo-block">
+
+    <!--    BURGER MENU - Start-->
     <div class="nav-burger-block">
       <input id="nav-burger" class="nav-burger" type="checkbox">
       <div class="nav-burger-lines"></div>
@@ -71,16 +73,20 @@
       </div>
       <!--MODAL Navigation Menu - END-->
     </div>
+    <!--    BURGER MENU - End-->
+
     <div class="logo">
       <!--      <img src="/images/main/img/logo.png" alt="logo">-->
       <img src="/images/main/img/logo.png" alt="logo">
     </div>
+
+    <!--    FOR LOGIN USERS-->
     <div class="profile-burger-block">
       <input id="profile-burger" class="profile-burger" type="checkbox">
       <!--      visible icon-->
       <img src="/images/main/img/icon-login.png" alt="login">
 
-      <!--MODAL PROFILE Menu - START-->
+      <!-- ***** MODAL PROFILE Menu - START ***** -->
       <div class="profile-modal">
         <label for="profile-burger" class="profile-burger-label">
           <img class="profile-close" src="/images/main/img/icon-arrow-profile.png" alt="close">
@@ -104,8 +110,10 @@
           <li class="profile-points"><a class="profile-link" href="#">Logout</a></li>
         </ul>
       </div>
-      <!--MODAL Navigation Menu - END-->
+      <!-- ***** MODAL Navigation Menu - END ***** -->
     </div>
+    <!--    FOR LOGIN USERS-->
+
   </div>
 
   <!--NAV Menu links DESKTOP - START-->
@@ -134,25 +142,82 @@
     </div>
   </nav>
   <!--NAV Menu links DESKTOP - END-->
+
+
   <div class="cart">
 
     <!--    disabled in CSS start -->
     <div class="open-shop-block">
-      <img src="/images/main/img/05-header-icon-shop.png" alt="shop">
+      <img src="../images/main/img/05-header-icon-shop.png" alt="shop">
       <a class="open-shop" href="#">Open a shop</a>
     </div>
     <!--    disabled in CSS end -->
 
     <div class="cart__count">
-      <a href="#">
-        <img src="/images/main/img/shopping-cart.png" alt="cart">
-      </a>
-      <span>14</span>
+
+      <div class="cart__count-left">
+        <a class="cart__count-link" href="#">
+          <img src="/images/main/img/shopping-cart.png" alt="cart">
+        </a>
+        <span>14</span>
+      </div>
+
+      <!--    ****** LOGIN likes ***** Start  -->
+      <div class="border">|</div>
+      <div class="cart__count-right">
+        <a class="cart__count-link" href="#">
+          <img src="/images/main/img/heart-white.png" alt="likes">
+        </a>
+        <span>42</span>
+      </div>
+      <!--    ****** LOGIN likes ***** End  -->
+
     </div>
-    <div style="margin-left: 12px" class="login">
-      <span>LOG IN /</span><span> SIGN UP</span>
+
+    <!--    ****** LOGIN ***** profile -->
+    <div class="profile">
+      LS
     </div>
+    <div class="profile-menu">
+      <!--            <a href="#">-->
+      <!--                <img src="/images/main/img/arrow-blue-down.png" alt="profile">-->
+      <!--            </a>-->
+      <details class="profile-details">
+        <summary class="profile-summary"></summary>
+        <div class="profile-block">
+          <ul class="outer-item-list">
+            <li class="list-item">
+              <a class="name-user" href="#">
+                <span class="name-user">fullnameuser</span>
+              </a>
+            </li>
+            <li class="list-item">
+              <a class="email-user" href="#">
+                <span class="email-user">fullnameuser@email.user</span>
+              </a>
+            </li>
+            <hr class="style-line">
+            <li class="list-item"><a class="list-link" href="#">Profile</a></li>
+            <li class="list-item"><a class="list-link" href="#">History of payments</a></li>
+            <li class="list-item"><a class="list-link" href="#">Purchase history</a></li>
+            <li class="list-item"><a class="list-link" href="#">Add Funds</a></li>
+            <hr class="style-line">
+            <li class="list-item"><a class="list-link" href="#">Logout</a></li>
+          </ul>
+        </div>
+      </details>
+    </div>
+    <!--    ****** LOGIN ***** profile -->
+
+
+    <!-- !!!!   LOG IN SIGN UP BUTTON !!!! - Start-->
+<!--    <div class="login">-->
+<!--      <span>LOG IN /</span> <span>SIGN UP</span>-->
+<!--    </div>-->
+    <!--  !!!!  LOG IN SIGN UP BUTTON - !!!!! End -->
+
   </div>
+
   <!--Mobile Navigation Menu - START-->
   <nav class="nav-mobile">
     <div class="menu">
@@ -179,46 +244,6 @@
     </div>
   </nav>
   <!--Mobile Navigation Menu - END -->
-
-  </div>
-
-  <!--  CART - NOLOGIN PINK FIELD for mobile - START -->
-  <div class="cart__count-mobile-nologin">
-    <div class="cart__count">
-      <a href="#">
-        <img src="/images/main/img/shopping-cart.png" alt="cart">
-      </a>
-      <span>14</span>
-    </div>
-  </div>
-  <!--  CART - NOLOGIN PINK FIELD for mobile - END-->
-
-
-  <!--  CART - LOGIN PINK FIELD for mobile  - START -->
-  <div class="cart__count-mobile-login">
-    <div class="cart__count-login">
-
-      <div class="cart__count-login-left">
-        <a class="cart__count-login-link" href="#">
-          <img src="/images/main/img/shopping-cart.png" alt="cart">
-        </a>
-        <span>14</span>
-      </div>
-
-      <div class="border">
-        |
-      </div>
-
-      <div class="cart__count-login-right">
-        <a class="cart__count-login-link" href="#">
-          <img src="/images/main/img/heart-white.png" alt="likes">
-        </a>
-        <span>42</span>
-      </div>
-    </div>
-  </div>
-  <!--  CART - LOGIN PINK FIELD for mobile END-->
-
 
 </header>
 
