@@ -120,6 +120,7 @@ option {
     position: absolute;
     font-family: 'Atma', cursive;
     font-size: 19px;
+    white-space: nowrap;
     color: #273841;
     z-index: 2;
 }
@@ -133,7 +134,7 @@ option {
 .next-date {
     transform: rotate(10.95deg);
     top: 2.2em;
-    left: 4em;
+    right: 1em;
 
 }
 
@@ -407,6 +408,11 @@ option {
         height: 154px;
     }
 
+    .next-date {
+        right: 0.5em;
+    }
+
+
     .right-cards img {
         max-width: 340px;
     }
@@ -419,6 +425,11 @@ option {
         flex-wrap: wrap;
         justify-content: space-evenly;
         row-gap: 2em;
+    }
+
+    .next-draw,
+    .next-date {
+        font-size: 16px;
     }
 
     .card-block-1,
