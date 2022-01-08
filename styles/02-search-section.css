@@ -224,7 +224,6 @@ option {
 }
 
 @media (max-width: 1070px) {
-
     .search-block {
         padding: 31px 10px 18px 10px;
     }
@@ -242,6 +241,21 @@ option {
     }
 
     .sale, .sale-span {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .manual-search-input input {
+        width: 100%;
+    }
+
+    .input-search img {
+        right: 5%;
+    }
+
+    .search-button {
         display: none;
     }
 }
