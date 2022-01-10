@@ -1,0 +1,35 @@
+.login_wrapper {
+    width: 570px;
+    margin: 0 auto;
+
+    /*background-color: #E1D7FF;*/
+}
+
+.heading-login {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #E85B96;
+}
+
+.enter-question {
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #8F9A9F;
+}
+
+.login-form {
+    background: #FDFDFD;
+    border: 1px solid #D4E0E7;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
