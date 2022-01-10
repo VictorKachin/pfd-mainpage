@@ -528,6 +528,10 @@ option {
         display: none;
     }
 
+    .block-2 {
+        display: none;
+    }
+
     .right-cards img {
         max-width: 310px;
     }
