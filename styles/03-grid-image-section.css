@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Atma:wght@500&display=swap');
 
-
 .sort-filter {
     max-width: 1430px;
-    margin: 0 auto 1.5em;
     position: relative;
     display: flex;
     /*justify-content: space-between;*/
@@ -255,10 +253,6 @@ option {
         margin-left: 0;
     }
 
-    .sort-filter {
-        /*padding: 0 10px;*/
-    }
-
     .wrapper {
         padding: 0 10px;
     }
@@ -341,11 +335,18 @@ option {
     }
 }
 
+@media (max-width: 1000px) {
+    .sort-filter {
+        padding: 1em 0 1.5em;
+    }
+}
+
 @media (max-width: 910px) {
     .filter-block {
         /*width: 80px;*/
         display: flex;
         align-items: center;
+        /*padding: 1em 0;*/
     }
 
     .container {

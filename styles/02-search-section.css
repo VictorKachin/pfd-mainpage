@@ -3,7 +3,7 @@
     background-color: #F2F2F2;
     display: flex;
     justify-content: center;
-    margin: 0 auto 1.5em;
+    /*margin: 0 auto 1.5em;*/
 }
 
 .search-section p {

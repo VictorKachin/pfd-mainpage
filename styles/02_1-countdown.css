@@ -1,0 +1,56 @@
+.sale-countdown {
+    max-width: 1430px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sale-percent {
+    width: 135px;
+    height: 44px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #7250D4;
+}
+
+.sale-text {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #E1D7FF;
+}
+
+.sale-amount {
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.countdown-arrow {
+    padding: 20px;
+}
+
+.countdown-items {
+    width: 320px;
+    height: 44px;
+    background-color: #A4AEB3;
+}
+
+@media (max-width: 520px) {
+    .sale-countdown {
+        flex-direction: column;
+        padding: 20px 10px 10px;
+    }
+    .countdown-arrow {
+        padding: 10px;
+        transform: rotate(90deg);
+        transition: 0.5s;
+    }
+}
+
