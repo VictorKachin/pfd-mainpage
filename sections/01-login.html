@@ -240,7 +240,7 @@
 <!--LOGIN FORM - Start -->
 <section class="login_wrapper">
 
-<!--Heading-->
+  <!--Heading-->
   <div class="heading-login">
     <div class="heading">
       Log In
@@ -252,18 +252,133 @@
     </div>
   </div>
 
-<!--  Log In Form-->
+  <!--  Log In Form-->
   <div class="login-form">
-    <form action="">
+    <form action="#" method="post">
+
+      <div class="inputs-container">
+        <label class="inputs-label" for="login">Login</label>
+        <input type="text" placeholder="Enter Username" id="login" name="login" required>
+
+        <label class="inputs-label" for="psw">Password</label>
+        <input type="password" placeholder="Password" id="psw" name="psw" required>
+
+        <div class="forgot">
+          <span class="psw"><a href="#">Forgot your password?</a></span>
+
+        </div>
+
+        <label class="remember-text">
+          <input type="checkbox" checked="checked" name="remember">
+          Remember me
+        </label>
+
+        <button class="login-btn" type="submit">Log In</button>
+
+      </div>
+
+    </form>
+
+    <div class="or-login">
+      <div class="or-login-text">
+        or login with
+      </div>
+    </div>
+
+    <div class="login-social-btns">
+      <button class="login-social">
+        <img class="login-social-icon" src="/images/main/img/icon-google-logo.png" alt="google-login">
+        <span class="login-social-name">Google</span>
+      </button>
+      <button class="login-social">
+        <img class="login-social-icon" src="/images/main/img/icon-facebook-logo.png" alt="facebook-login">
+        <span class="login-social-name">Facebook</span>
+      </button>
+      <button class="login-social">
+        <img class="login-social-icon" src="/images/main/img/icon-apple.png" alt="apple-login">
+        <span class="login-social-name">Apple</span>
+      </button>
+    </div>
+
+  </div>
+
+
+</section>
+<!--LOGIN FORM - End -->
+
+<!--*************************-->
+
+<!--Sign Up FORM - Start -->
+<section class="login_wrapper">
+
+  <!--Heading-->
+  <div class="heading-login">
+    <div class="heading">
+      Log In
+    </div>
+
+    <div class="enter">
+      <span class="enter-question">Don’t have an account yet?</span>
+      <a class="enter-link" href="#">Sign Up</a>
+    </div>
+  </div>
+
+  <!--  Log In Form-->
+  <div class="login-form">
+
+    <div class="login-social-btns">
+      <button class="login-social">
+        <img class="login-social-icon" src="/images/main/img/icon-google-logo.png" alt="google-login">
+        <span class="login-social-name">Google</span>
+      </button>
+      <button class="login-social">
+        <img class="login-social-icon" src="/images/main/img/icon-facebook-logo.png" alt="facebook-login">
+        <span class="login-social-name">Facebook</span>
+      </button>
+      <button class="login-social">
+        <img class="login-social-icon" src="/images/main/img/icon-apple.png" alt="apple-login">
+        <span class="login-social-name">Apple</span>
+      </button>
+    </div>
+
+    <div class="or-login">
+      <div class="or-login-text">
+        or
+      </div>
+    </div>
+
+    <form action="#" method="post">
+
+      <div class="inputs-container">
+        <label class="inputs-label" for="name">Name</label>
+        <input type="text" placeholder="Name" id="name" name="name" required>
+
+        <label class="inputs-label" for="email">Email</label>
+        <input type="text" placeholder="Name" id="email" name="name" required>
+
+        <label class="inputs-label" for="psw-up">Password</label>
+        <input type="password" placeholder="Password" id="psw-up" name="psw-up" required>
+
+        <div class="protect">
+          <span class="protect">Protect your account by creating a complex password</span>
+        </div>
+
+        <label class="remember-text">
+          <input type="checkbox" checked="checked" name="remember">
+          Remember me
+        </label>
+
+        <button class="login-btn" type="submit">Log In</button>
+
+      </div>
 
     </form>
 
   </div>
 
 
-
 </section>
-<!--LOGIN FORM - End -->
+<!--Sign Up FORM - End -->
 
 </body>
 </html>
