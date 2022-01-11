@@ -1,5 +1,5 @@
 .login_wrapper {
-    width: 570px;
+    max-width: 570px;
     margin: 0 auto;
     padding-top: 70px;
 }
@@ -433,5 +433,38 @@ input[type=email] {
 }
 
 @media (max-width: 610px) {
+
+    .login_wrapper {
+        padding-top: 20px;
+    }
+
+    .heading-login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        flex-direction: column;
+        row-gap: 18px;
+    }
+
+    .login-form {
+        padding: 0 20px;
+        background: #FDFDFD;
+        border: none;
+        box-sizing: border-box;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .login-social-btns {
+        display: flex;
+        flex-direction: column;
+        row-gap: 22px;
+    }
+
+    .login-social {
+        width: 100%;
+        justify-content: center;
+    }
 
 }
