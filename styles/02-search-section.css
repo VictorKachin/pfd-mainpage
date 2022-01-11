@@ -97,6 +97,7 @@ option {
 }
 
 .sale-span {
+    margin-left: 10px;
     font-size: 16px;
     line-height: 16px;
     color: #E85B96;
@@ -164,6 +165,80 @@ option {
     right: 12%;
     top: 34%;
 }
+
+
+
+/*CHECKBOXES STYLES*/
+
+/* Hiding the initial checkbox */
+
+.main-sale {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    /*margin-bottom: 20px;*/
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 22px;
+    align-items: center;
+    color: #273841;
+}
+
+.checkbox-sale {
+    visibility: hidden;
+}
+/* Creating a custom checkbox based on demand */
+.checkbox-span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background: #FFFFFF;
+    border: 1px solid #D4E0E7;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+/* Specify the background color to be shown when hovering over checkbox */
+.main-sale:hover input ~ .checkbox-span {
+    background-color: rgba(232, 91, 150, 0.1);
+    border: 1px solid #E85B96;
+}
+/* Specify the background color to be shown when checkbox is active */
+.main-sale input:active ~ .checkbox-span {
+    border: 1px solid #E85B96;
+}
+/* Specify the background color to be shown when checkbox is checked */
+.main-sale input:checked ~ .checkbox-span {
+    background: #E85B96;
+}
+/* Checkmark to be shown in checkbox */
+/* It is not be shown when not checked */
+.checkbox-span:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Display checkmark when checked */
+.main-sale input:checked ~ .checkbox-span:after {
+    display: block;
+}
+/* Styling the checkmark using webkit */
+/* Rotated the rectangle by 45 degree and
+showing only two border to make it look
+like a tickmark */
+.main-sale .checkbox-span:after {
+    left: 6px;
+    bottom: 4px;
+    width: 8px;
+    height: 16px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
 
 @media (max-width: 1430px) {
     .search-block {

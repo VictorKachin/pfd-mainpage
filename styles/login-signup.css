@@ -61,7 +61,9 @@
 
 /* Full-width inputs */
 
-input[type=text], input[type=password] {
+input[type=text],
+input[type=password],
+input[type=email] {
     width: 100%;
     padding: 12px 20px;
     display: inline-block;
@@ -69,21 +71,96 @@ input[type=text], input[type=password] {
     border: 1px solid #A4AEB3;
     box-sizing: border-box;
     border-radius: 4px;
+    transition: all 0.3s linear;
+}
+
+input[type=text]:hover,
+input[type=password]:hover,
+input[type=email]:hover {
+    border: 1px solid #2B91D7;
+    /*transition: all 0.2s linear;*/
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus {
+    background: #F2F8FD;
+    border: 1px solid #2B91D7;
+}
+
+input[type=text]:active,
+input[type=password]:active,
+input[type=email]:active {
+    background: #FFFFFF;
+    /*border: none;*/
+    border: 1px solid #1D81C6;
 }
 
 input[type=password] {
     margin: 8px 0;
 }
 
-input[type=text] {
+input[type=text],
+input[type=email] {
     margin: 8px 0 30px 0;
 }
 
+.input-group {
+    position: relative;
+}
+
+.icon-user,
+.icon-email,
+.icon-psw {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: 38px;
+}
+
+.icon-user {
+    background:
+            url("/images/main/img/icon-user.svg")
+            no-repeat center content-box;
+}
+
+.icon-email {
+    background:
+            url("/images/main/img/icon-email.svg")
+            no-repeat center content-box;
+}
+
+
+.icon-psw {
+    background:
+            url("/images/main/img/icon-psw.svg")
+            no-repeat center content-box;
+}
+
+.icon-eye {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 12px;
+    top: 38px;
+    background:
+            url("/images/main/img/icon-eye.svg")
+            no-repeat center content-box;
+}
+
+.input-group input {
+    padding-left: 36px;
+}
+
 .inputs-label {
+    position: relative;
     font-size: 18px;
     line-height: 16px;
     color: #273841;
 }
+
+
 
 .forgot {
     width: fit-content;
@@ -96,6 +173,32 @@ input[type=text] {
     line-height: 16px;
     color: #273841;
 }
+
+.remember-text a {
+   color: #2B91D7;
+}
+
+.accept {
+    margin: 30px 0;
+}
+
+.protect {
+    border-top: 4px solid #D4E0E7;
+    border-radius: 1px;
+    padding: 6px 0 18px;
+    margin-top: 16px;
+}
+
+.protect-text {
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #8F9A9F;
+
+}
+
 
 .psw a {
     font-size: 16px;
@@ -151,7 +254,7 @@ input[type=text] {
     background-color: #B7BFC3;
     display: flex;
     align-items: center;
-    margin: 40px 0;
+    margin: 30px 0;
 
 }
 
@@ -203,3 +306,100 @@ input[type=text] {
     color: #273841;
 }
 
+.link-faq {
+    padding-top: 24px;
+    text-align: center;
+}
+
+.list-faq-text {
+    font-size: 16px;
+    line-height: 16px;
+    color: #232221;
+}
+
+.list-faq-text a {
+    color: #2B91D7;
+}
+
+.list-faq-text a:hover {
+    text-decoration: none;
+}
+
+/*CHECKBOXES STYLES*/
+
+/* Hiding the initial checkbox */
+
+.main {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 22px;
+    align-items: center;
+    color: #273841;
+}
+
+.main-accept {
+    padding-left: 1.8em;
+    padding-right: .5em;
+}
+
+.main a {
+   color: #2B91D7;
+}
+
+.checkbox-input {
+    visibility: hidden;
+}
+/* Creating a custom checkbox based on demand */
+.checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    border: 1px solid #A4AEB3;
+    border-radius: 4px;
+    background-color: #F8F8F8;
+}
+/* Specify the background color to be shown when hovering over checkbox */
+.main:hover input ~ .checkbox {
+    background: #F2F2F2;
+    border: 1px solid #2B91D7;
+}
+/* Specify the background color to be shown when checkbox is active */
+.main input:active ~ .checkbox {
+    background-color: white;
+}
+/* Specify the background color to be shown when checkbox is checked */
+.main input:checked ~ .checkbox {
+    background: #1D81C6;
+}
+/* Checkmark to be shown in checkbox */
+/* It is not be shown when not checked */
+.checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Display checkmark when checked */
+.main input:checked ~ .checkbox:after {
+    display: block;
+}
+/* Styling the checkmark using webkit */
+/* Rotated the rectangle by 45 degree and
+showing only two border to make it look
+like a tickmark */
+.main .checkbox:after {
+    left: 6px;
+    bottom: 4px;
+    width: 8px;
+    height: 16px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

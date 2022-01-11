@@ -255,30 +255,33 @@
   <!--  Log In Form-->
   <div class="login-form">
     <form action="#" method="post">
-
       <div class="inputs-container">
-        <label class="inputs-label" for="login">Login</label>
-        <input type="text" placeholder="Enter Username" id="login" name="login" required>
 
-        <label class="inputs-label" for="psw">Password</label>
-        <input type="password" placeholder="Password" id="psw" name="psw" required>
+        <div class="input-group">
+          <label class="inputs-label" for="login">Login</label>
+          <i class="icon-user"></i>
+          <input type="text" placeholder="" id="login" name="login" required>
+        </div>
+
+        <div class="input-group">
+          <label class="inputs-label" for="psw">Password</label>
+          <i class="icon-psw"></i>
+          <input type="password" placeholder="" id="psw" name="psw" required>
+        </div>
+
 
         <div class="forgot">
           <span class="psw"><a href="#">Forgot your password?</a></span>
-
         </div>
 
-        <label class="remember-text">
-          <input type="checkbox" checked="checked" name="remember">
-          Remember me
+        <label class="main"> Remember me
+          <input class="checkbox-input" type="checkbox" checked="checked" name="remember">
+          <span class="checkbox"></span>
         </label>
 
         <button class="login-btn" type="submit">Log In</button>
-
       </div>
-
     </form>
-
     <div class="or-login">
       <div class="or-login-text">
         or login with
@@ -314,18 +317,16 @@
   <!--Heading-->
   <div class="heading-login">
     <div class="heading">
-      Log In
+      Sign Up
     </div>
-
     <div class="enter">
-      <span class="enter-question">Don’t have an account yet?</span>
-      <a class="enter-link" href="#">Sign Up</a>
+      <span class="enter-question">Already have an account?</span>
+      <a class="enter-link" href="#">Log In</a>
     </div>
   </div>
 
-  <!--  Log In Form-->
+  <!-- Form-->
   <div class="login-form">
-
     <div class="login-social-btns">
       <button class="login-social">
         <img class="login-social-icon" src="/images/main/img/icon-google-logo.png" alt="google-login">
@@ -340,36 +341,70 @@
         <span class="login-social-name">Apple</span>
       </button>
     </div>
-
     <div class="or-login">
       <div class="or-login-text">
         or
       </div>
     </div>
-
     <form action="#" method="post">
-
       <div class="inputs-container">
-        <label class="inputs-label" for="name">Name</label>
-        <input type="text" placeholder="Name" id="name" name="name" required>
 
-        <label class="inputs-label" for="email">Email</label>
-        <input type="text" placeholder="Name" id="email" name="name" required>
-
-        <label class="inputs-label" for="psw-up">Password</label>
-        <input type="password" placeholder="Password" id="psw-up" name="psw-up" required>
-
-        <div class="protect">
-          <span class="protect">Protect your account by creating a complex password</span>
+        <div class="input-group">
+          <label class="inputs-label" for="name">Name</label>
+          <i class="icon-user"></i>
+          <input type="text" placeholder="" id="name" name="name" required>
         </div>
 
-        <label class="remember-text">
-          <input type="checkbox" checked="checked" name="remember">
-          Remember me
-        </label>
+        <div class="input-group">
+          <label class="inputs-label" for="email">Email</label>
+          <i class="icon-email"></i>
+          <input type="email" placeholder="" id="email" name="name" required>
+        </div>
 
-        <button class="login-btn" type="submit">Log In</button>
+        <div class="input-group">
+          <label class="inputs-label" for="psw-up">Password</label>
+          <i class="icon-psw"></i>
+          <i class="icon-eye"></i>
+          <input type="password" placeholder="" id="psw-up" name="psw-up" required>
+        </div>
 
+        <div class="protect">
+          <span class="protect-text">Protect your account by creating a complex password</span>
+        </div>
+
+        <div class="input-group">
+          <label class="inputs-label" for="psw-conf">Password</label>
+          <i class="icon-psw"></i>
+          <i class="icon-eye"></i>
+          <input type="password" placeholder="" id="psw-conf" name="psw-conf" required>
+        </div>
+
+        <div class="accept">
+          <form action="#">
+
+            <label class="main main-accept">
+              <input class="checkbox-input" type="checkbox" name="remember">
+              <span class="checkbox"></span>
+              I would like to receive information about updates and promotions on this site.
+            </label>
+
+            <br>
+
+            <label class="main main-accept">
+              <input class="checkbox-input" type="checkbox" name="remember">
+              <span class="checkbox"></span>
+              I confirm the accuracy of the information provided and my fully accept the
+              <a href="#">rules stipulated in the agreement.</a>
+            </label>
+          </form>
+
+        </div>
+
+        <button class="login-btn" type="submit">Create account</button>
+
+        <div class="link-faq">
+          <span class="list-faq-text">Are you an artist? Please read <a href="@">FAQ</a></span>
+        </div>
       </div>
 
     </form>

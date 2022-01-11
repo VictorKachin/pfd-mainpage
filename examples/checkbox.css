@@ -1,0 +1,54 @@
+/* Hiding the initial checkbox */
+input[type=checkbox] {
+    visibility: hidden;
+}
+/* Creating a custom checkbox based on demand */
+.checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #A4AEB3;
+    border-radius: 4px;
+    background-color: #F8F8F8;
+}
+/* Specify the background color to be shown when hovering over checkbox */
+.main:hover input ~ .checkbox {
+    background: #F2F2F2;
+    border: 1px solid #2B91D7;
+}
+/* Specify the background color to be shown when checkbox is active */
+.main input:active ~ .checkbox {
+    background-color: white;
+}
+/* Specify the background color to be shown when checkbox is checked */
+.main input:checked ~ .checkbox {
+    background: #1D81C6;
+}
+/* Checkmark to be shown in checkbox */
+/* It is not be shown when not checked */
+.checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Display checkmark when checked */
+.main input:checked ~ .checkbox:after {
+    display: block;
+}
+/* Styling the checkmark using webkit */
+/* Rotated the rectangle by 45 degree and
+showing only two border to make it look
+like a tickmark */
+.main .checkbox:after {
+    left: 7px;
+    bottom: 6px;
+    width: 8px;
+    height: 16px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
