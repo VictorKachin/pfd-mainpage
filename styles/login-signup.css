@@ -149,6 +149,28 @@ input[type=email] {
             no-repeat center content-box;
 }
 
+.icon-eye-slash {
+    position: absolute;
+    /*visibility: hidden;*/
+    width: 20px;
+    height: 20px;
+    right: 12px;
+    top: 38px;
+    background:
+            url("/images/main/img/icon-eye-active.svg")
+            no-repeat center content-box;
+}
+
+#psw-btn {
+    /*position: absolute;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    right: 12px;*/
+/*    top: 38px;*/
+    background: transparent;
+    border: none;
+}
+
 .input-group input {
     padding-left: 36px;
 }
