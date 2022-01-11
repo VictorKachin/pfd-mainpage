@@ -547,5 +547,12 @@ input[type=email] {
     border: none;
 }
 
+@media (max-width: 610px) {
+    .forgot-section {
+        border: none;
+        box-shadow: none;
+    }
+
+}
 
 /* FORGOT PASSWORD Styles - End */
