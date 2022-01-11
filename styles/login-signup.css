@@ -55,6 +55,9 @@
     box-sizing: border-box;
     border-radius: 6px;
     overflow: hidden;
+
+/*// !!! Только для демонстрации section - УБРАТЬ потом!*/
+    margin-bottom: 40px;
 }
 
 /*Form*/
@@ -121,13 +124,22 @@ input[type=email] {
     top: 38px;
 }
 
+.icon-email-forgot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: 19px;
+}
+
 .icon-user {
     background:
             url("/images/main/img/icon-user.svg")
             no-repeat center content-box;
 }
 
-.icon-email {
+.icon-email,
+.icon-email-forgot {
     background:
             url("/images/main/img/icon-email.svg")
             no-repeat center content-box;
@@ -468,3 +480,72 @@ input[type=email] {
     }
 
 }
+
+/* FORGOT PASSWORD Styles - Start */
+.forgot-section {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px 50px 12px;
+    background: #FDFDFD;
+    border: 1px solid #D4E0E7;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(90, 96, 99, 0.3);
+    border-radius: 6px;
+
+    /*// !!! Только для демонстрации section - УБРАТЬ потом!*/
+    margin-bottom: 40px;
+}
+
+.heading-forgot-section {
+    padding-bottom: 26px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 16px;
+    text-align: center;
+    color: #273841;
+}
+
+.text-forgot-section {
+    padding-bottom: 30px;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #273841;
+}
+
+.form-forgot-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.send-btn {
+    margin: 0 auto 40px;
+    width: 168px;
+}
+
+.another-email {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #8F9A9F;
+    background-color: transparent;
+    border-bottom: 2px dotted #8F9A9F ;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.another-email:hover {
+    color: #2B91D7;
+    border-bottom: 2px dotted #2B91D7 ;
+}
+
+.another-email:active {
+    color: #2B91D7;
+    border: none;
+}
+
+
+/* FORGOT PASSWORD Styles - End */
