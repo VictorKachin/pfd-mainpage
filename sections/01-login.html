@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="../styles/styles.css">
   <link rel="stylesheet" href="../styles/01-header.css">
   <link rel="stylesheet" href="../styles/modal-mobile-menu.css">
+  <link rel="stylesheet" href="../styles/modal-mobile-profile.css">
+
   <link rel="stylesheet" href="../styles/login-signup.css">
 </head>
 <body>
@@ -265,9 +267,10 @@
 
         <div class="input-group">
           <label class="inputs-label" for="psw">Password</label>
-          <i class="icon-psw" ></i>
-          <button id="psw-btn"> <i class="icon-eye" id="icon-eye"></i></button>
-          <input type="password" placeholder="" id="psw" name="psw" required>
+          <i class="icon-psw"></i>
+          <i class="showLogin icon-eye"></i>
+          <i class="hideLogin icon-eye-slash"></i>
+          <input class="psw" type="password" placeholder="" id="psw" name="psw" required>
         </div>
 
 
@@ -365,8 +368,9 @@
         <div class="input-group">
           <label class="inputs-label" for="psw-up">Password</label>
           <i class="icon-psw"></i>
-          <i class="icon-eye"></i>
-          <input type="password" placeholder="" id="psw-up" name="psw-up" required>
+          <i class="showPsw icon-eye"></i>
+          <i class="hidePsw icon-eye-slash"></i>
+          <input class="psw-field" type="password" placeholder="" id="psw-up" name="psw-up" required>
         </div>
 
         <div class="protect">
@@ -376,8 +380,9 @@
         <div class="input-group">
           <label class="inputs-label" for="psw-conf">Password</label>
           <i class="icon-psw"></i>
-          <i class="icon-eye"></i>
-          <input type="password" placeholder="" id="psw-conf" name="psw-conf" required>
+          <i class="showConf icon-eye"></i>
+          <i class="hideConf icon-eye-slash"></i>
+          <input class="psw-field-conf" type="password" placeholder="" id="psw-conf" name="psw-conf" required>
         </div>
 
         <div class="accept">
@@ -415,6 +420,6 @@
 
 </section>
 <!--Sign Up FORM - End -->
-<script src="/js/password-show.js"></script>
+<script src="/js/psw-show-hide.js"></script>
 </body>
 </html>

@@ -92,11 +92,13 @@ input[type=text]:active,
 input[type=password]:active,
 input[type=email]:active {
     background: #FFFFFF;
-    /*border: none;*/
     border: 1px solid #1D81C6;
 }
 
-input[type=password] {
+input[type=password],
+.psw[type=text],
+.psw-field[type=text],
+.psw-field-conf[type=text] {
     margin: 8px 0;
 }
 
@@ -131,7 +133,6 @@ input[type=email] {
             no-repeat center content-box;
 }
 
-
 .icon-psw {
     background:
             url("/images/main/img/icon-psw.svg")
@@ -145,7 +146,7 @@ input[type=email] {
     right: 12px;
     top: 38px;
     background:
-            url("/images/main/img/icon-eye.svg")
+            url("/images/main/img/icon-eye-active.svg")
             no-repeat center content-box;
 }
 
@@ -157,16 +158,30 @@ input[type=email] {
     right: 12px;
     top: 38px;
     background:
-            url("/images/main/img/icon-eye-active.svg")
+            url("/images/main/img/icon-eye.svg")
             no-repeat center content-box;
 }
 
+.showLogin,
+.hideLogin,
+.showPsw,
+.hidePsw,
+.showConf,
+.hideConf {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 12px;
+    top: 38px;
+}
+
+.hideLogin,
+.hidePsw,
+.hideConf{
+    display: none;
+}
+
 #psw-btn {
-    /*position: absolute;*/
-/*    width: 20px;*/
-/*    height: 20px;*/
-/*    right: 12px;*/
-/*    top: 38px;*/
     background: transparent;
     border: none;
 }
@@ -181,8 +196,6 @@ input[type=email] {
     line-height: 16px;
     color: #273841;
 }
-
-
 
 .forgot {
     width: fit-content;
@@ -218,9 +231,7 @@ input[type=email] {
     align-items: center;
     text-align: right;
     color: #8F9A9F;
-
 }
-
 
 .psw a {
     font-size: 16px;
@@ -350,7 +361,6 @@ input[type=email] {
 /*CHECKBOXES STYLES*/
 
 /* Hiding the initial checkbox */
-
 .main {
     display: block;
     position: relative;
@@ -375,7 +385,7 @@ input[type=email] {
 .checkbox-input {
     visibility: hidden;
 }
-/* Creating a custom checkbox based on demand */
+
 .checkbox {
     position: absolute;
     top: 0;
@@ -386,34 +396,30 @@ input[type=email] {
     border-radius: 4px;
     background-color: #F8F8F8;
 }
-/* Specify the background color to be shown when hovering over checkbox */
+
 .main:hover input ~ .checkbox {
     background: #F2F2F2;
     border: 1px solid #2B91D7;
 }
-/* Specify the background color to be shown when checkbox is active */
+
 .main input:active ~ .checkbox {
     background-color: white;
 }
-/* Specify the background color to be shown when checkbox is checked */
+
 .main input:checked ~ .checkbox {
     background: #1D81C6;
 }
-/* Checkmark to be shown in checkbox */
-/* It is not be shown when not checked */
+
 .checkbox:after {
     content: "";
     position: absolute;
     display: none;
 }
-/* Display checkmark when checked */
+
 .main input:checked ~ .checkbox:after {
     display: block;
 }
-/* Styling the checkmark using webkit */
-/* Rotated the rectangle by 45 degree and
-showing only two border to make it look
-like a tickmark */
+
 .main .checkbox:after {
     left: 6px;
     bottom: 4px;
@@ -424,4 +430,8 @@ like a tickmark */
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+@media (max-width: 610px) {
+
 }
