@@ -25,8 +25,6 @@
 .catalog-link-desktop a,
 .catalog-link-mobile a {
     display: none;
-    /*text-decoration: none;*/
-    /*color: #2B91D7;*/
 }
 
 .search-block {
@@ -39,7 +37,6 @@
 }
 
 .image-search-fields {
-    /*width: 100%;*/
     display: flex;
     align-items: center;
 }
@@ -178,11 +175,8 @@ option {
 }
 
 
-
 /*CHECKBOXES STYLES*/
-
 /* Hiding the initial checkbox */
-
 .main-sale {
     display: block;
     position: relative;
@@ -302,9 +296,6 @@ like a tickmark */
     .selection-search {
         width: 100%;
         order: 2;
-        /*display: flex;*/
-        /*align-items: baseline;*/
-        /*justify-content: space-between;*/
     }
 
     .image-search-title {
@@ -325,7 +316,6 @@ like a tickmark */
 
     .selects {
         width: 172px;
-        /*height: 60px;*/
         margin-right: 6px;
     }
 
@@ -345,8 +335,6 @@ like a tickmark */
         position: relative;
         left: -260%;
         width: 90px;
-        /*order: 3;*/
-        /*height: 40px;*/
     }
 
     .filter-summary {
@@ -387,6 +375,7 @@ like a tickmark */
         height: 9px;
         left: 74%;
         top: 40%;
+        cursor: pointer;
     }
 
     .filter-details[open] > .filter-summary::after {
@@ -443,16 +432,9 @@ like a tickmark */
 
     .selects {
         width: 100%;
-        /*height: 60px;*/
         margin-right: 6px;
     }
 
-    /*hr.style-line {*/
-    /*    border: 0;*/
-    /*    height: 1px;*/
-    /*    background: #D4E0E7;*/
-    /*    margin: 10px 0 14px;*/
-    /*}*/
 
     .show-results {
         display: flex;
@@ -478,7 +460,6 @@ like a tickmark */
 }
 
 @media (max-width: 425px) {
-
     .search-block {
         align-items: center;
     }

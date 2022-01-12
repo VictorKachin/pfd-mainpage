@@ -162,10 +162,6 @@
     padding: 10px 12px 12px;
 }
 
-.slider__item.slick-center {
-    /*opacity: 1;*/
-}
-
 /*cards inside .carousel-card*/
 .carousel-start,
 .card {
@@ -239,13 +235,71 @@
     margin-right: 0;
 }
 
-/*@media (max-width: 1350px) {*/
-/*    .wrapper-slider {*/
-/*        display: none;*/
-/*    }*/
-/*}*/
+.violet-slider {
+    display: none;
+}
+
+.prepaid_slick {
+    width: 320px;
+    height: 320px;
+    background-image: url("/images/main/img/prepaid-310.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.prepaid_slick:hover {
+    background-image: url("/images/main/img/prepaid_hover-310.svg");
+}
+
+.excl_slick {
+    width: 320px;
+    height: 320px;
+    background-image: url("/images/main/img/excl-310.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.excl_slick:hover {
+    background-image: url("/images/main/img/excl_hover-310.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.blog_slick {
+    width: 320px;
+    height: 320px;
+    background-image: url("/images/main/img/blog-310.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.blog_slick:hover {
+    background-image: url("/images/main/img/blog_hover-310.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.slider-link{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 960px) {
+    .violet-slider {
+        display: block;
+    }
+}
 
 @media (max-width: 425px) {
+    .carousel-start-img.violet {
+        width: 240px;
+    }
+
     .right-block-img {
         margin-right: 6px;
     }

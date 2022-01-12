@@ -15,30 +15,86 @@
     cursor: pointer;
 }
 
+.banner-link {
+    width: 100%;
+    height: 100%;
+}
+
 .banner-prepaid {
-    background-image: url("/images/main/img/prepaid.png");
+    background-image: url("/images/main/img/prepaid.svg");
 }
 
 .banner-prepaid:hover {
-    background-image: url("/images/main/img/prepaid_hover.png");
+    background-image: url("/images/main/img/prepaid_hover.svg");
     /*transition: 0.8s;*/
     transition: all linear 0.8s;
 }
 
 .banner-exclusive {
-    background-image: url("/images/main/img/excl-club.png");
+    background-image: url("/images/main/img/excl.svg");
 }
 
 .banner-exclusive:hover {
-    background-image: url("/images/main/img/excl-club_hover.png");
-    transition: all linear 0.5s;
+    background-image: url("/images/main/img/excl_hover.svg");
+    transition: 0.5s;
 }
 
 .banner-blog {
-    background-image: url("/images/main/img/blog.png");
+    background-image: url("/images/main/img/blog.svg");
 }
 
 .banner-blog:hover {
-    background-image: url("/images/main/img/blog_hover.png");
+    background-image: url("/images/main/img/blog_hover.svg");
     transition: all linear 0.8s;
+}
+
+@media (max-width: 1330px) {
+    .violet-banner_item {
+        width: 310px;
+    }
+
+    .banner-prepaid {
+        background-image: url("/images/main/img/prepaid-310.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .banner-prepaid:hover {
+        background-image: url("/images/main/img/prepaid_hover-310.svg");
+        transition: 0.8s;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .banner-exclusive {
+        background-image: url("/images/main/img/excl-310.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .banner-exclusive:hover {
+        background-image: url("/images/main/img/excl_hover-310.svg");
+        transition: 0.8s;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .banner-blog {
+        background-image: url("/images/main/img/blog-310.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .banner-blog:hover {
+        background-image: url("/images/main/img/blog_hover-310.svg");
+        transition: 0.8s;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+@media (max-width: 960px) {
+    .violet-banners {
+        display: none;
+    }
 }
