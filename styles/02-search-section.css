@@ -411,7 +411,7 @@ like a tickmark */
 
     .filter-choice {
         position: absolute;
-        right: 0;
+        right: -190%;
         top: 2em;
         width: 425px;
         padding: 20px 20px 12px;
@@ -468,6 +468,10 @@ like a tickmark */
 }
 
 @media (max-width: 768px) {
+    .filter-choice {
+        right: -180%;
+    }
+
     .filter-menu {
         left: -200%;
     }
