@@ -1,0 +1,44 @@
+.violet-banners {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.violet-banners-container {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.violet-banner_item {
+    width: 435px;
+    height: 358px;
+    cursor: pointer;
+}
+
+.banner-prepaid {
+    background-image: url("/images/main/img/prepaid.png");
+}
+
+.banner-prepaid:hover {
+    background-image: url("/images/main/img/prepaid_hover.png");
+    /*transition: 0.8s;*/
+    transition: all linear 0.8s;
+}
+
+.banner-exclusive {
+    background-image: url("/images/main/img/excl-club.png");
+}
+
+.banner-exclusive:hover {
+    background-image: url("/images/main/img/excl-club_hover.png");
+    transition: all linear 0.5s;
+}
+
+.banner-blog {
+    background-image: url("/images/main/img/blog.png");
+}
+
+.banner-blog:hover {
+    background-image: url("/images/main/img/blog_hover.png");
+    transition: all linear 0.8s;
+}
