@@ -255,6 +255,7 @@ like a tickmark */
         width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: flex-end;
         padding: 26px 10px 24px 10px;
     }
 
@@ -270,7 +271,6 @@ like a tickmark */
         width: 100%;
         order: 1;
         margin-bottom: 1em;
-
     }
 
     .manual-search-input input {
@@ -299,7 +299,6 @@ like a tickmark */
     .image-search-title {
         display: none;
     }
-
 }
 
 @media (max-width: 1070px) {
@@ -325,9 +324,11 @@ like a tickmark */
     }
 }
 
-
-
 @media (max-width: 425px) {
+
+    .search-block {
+        align-items: center;
+    }
 
     .manual-search {
         margin-bottom: 0.5em;

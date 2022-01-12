@@ -13,10 +13,13 @@
         display: flex;
         position: relative;
         width: 90px;
+        order: 3;
         /*height: 40px;*/
     }
 
     .filter-summary {
+        padding-left: 1em;
+        order: 3;
         font-size: 18px;
         list-style: none;
     }
@@ -50,7 +53,7 @@
         background: url("/images/main/img/arrow-blue-down.png") no-repeat;
         width: 16px;
         height: 9px;
-        left: 50%;
+        left: 74%;
         top: 40%;
     }
 
