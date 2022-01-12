@@ -343,8 +343,9 @@ like a tickmark */
     .filter-menu {
         display: flex;
         position: relative;
+        left: -260%;
         width: 90px;
-        order: 3;
+        /*order: 3;*/
         /*height: 40px;*/
     }
 
@@ -466,6 +467,12 @@ like a tickmark */
     /*LOGIN STYLES END */
 }
 
+@media (max-width: 768px) {
+    .filter-menu {
+        left: -200%;
+    }
+}
+
 @media (max-width: 425px) {
 
     .search-block {
@@ -510,6 +517,7 @@ like a tickmark */
     }
 
     .filter-menu {
+        left: 0;
         order: 1;
         margin-right: 2em;
     }
