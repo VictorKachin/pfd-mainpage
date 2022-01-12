@@ -24,8 +24,9 @@
 
 .catalog-link-desktop a,
 .catalog-link-mobile a {
-    text-decoration: none;
-    color: #2B91D7;
+    display: none;
+    /*text-decoration: none;*/
+    /*color: #2B91D7;*/
 }
 
 .search-block {
@@ -58,6 +59,7 @@ select {
     cursor: pointer;
     border: 1px solid #D4E0E7;
     border-radius: 6px;
+    background-color: transparent;
 }
 
 /* Custom Select wrapper */
@@ -69,6 +71,7 @@ select {
     margin-right: 20px;
     border-radius: .25em;
     overflow: hidden;
+    background-color: #FFFFFF;
 }
 
 /* Arrow */
@@ -105,7 +108,7 @@ option {
 
 .manual-search {
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     align-items: flex-end;
 }
 
@@ -175,7 +178,7 @@ option {
 .main-sale {
     display: block;
     position: relative;
-    padding-left: 35px;
+    padding-left: 12px;
     /*margin-bottom: 20px;*/
     cursor: pointer;
     font-size: 16px;
@@ -247,6 +250,7 @@ like a tickmark */
 }
 
 @media (max-width: 1370px) {
+
     .search-block {
         width: 100%;
         display: flex;
@@ -287,9 +291,9 @@ like a tickmark */
     .selection-search {
         width: 100%;
         order: 2;
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
+        /*display: flex;*/
+        /*align-items: baseline;*/
+        /*justify-content: space-between;*/
     }
 
     .image-search-title {
@@ -315,12 +319,19 @@ like a tickmark */
         margin-right: 6px;
     }
 
-    .sale, .sale-span {
-        display: none;
+    .main-sale,
+    .sale-span {
+        /*display: none;*/
     }
 }
 
+
+
 @media (max-width: 425px) {
+
+    .manual-search {
+        margin-bottom: 0.5em;
+    }
 
     .manual-search-input input {
         width: 100%;
@@ -330,7 +341,19 @@ like a tickmark */
         right: 5%;
     }
 
+    .manual-search-block {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .input-search {
+        width: 100%;
+    }
+
     .search-button {
-        display: none;
+        width: 140px;
+        height: 40px;
     }
 }

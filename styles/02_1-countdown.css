@@ -39,7 +39,6 @@
 .countdown-items {
     width: 320px;
     height: 44px;
-    background-color: #A4AEB3;
 }
 
 @media (max-width: 520px) {
