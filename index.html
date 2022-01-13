@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="styles/02-search-section.css">
   <link rel="stylesheet" href="styles/02_1-countdown.css">
   <link rel="stylesheet" href="styles/03-grid-image-section.css">
-<!--  <link rel="stylesheet" href="styles/login-signup.css">-->
+  <!--  <link rel="stylesheet" href="styles/login-signup.css">-->
 
   <!--CAROUSEL-JS Styles - START-->
   <link rel="stylesheet" href="./styles/04-slider.css">
@@ -285,9 +285,9 @@
           </select>
         </label>
 
-<!--        <label for="sale">-->
-<!--          <input type="checkbox" name="sale" class="sale">-->
-<!--        </label>-->
+        <!--        <label for="sale">-->
+        <!--          <input type="checkbox" name="sale" class="sale">-->
+        <!--        </label>-->
 
         <label class="main-sale" for="sale">
           <input class="checkbox-sale" type="checkbox" name="sale" id="sale">
@@ -296,11 +296,11 @@
 
         <span class="sale-span">Sale %</span>
       </div>
-<!--      <div class="go-to-catalog">-->
-<!--        <p class="catalog-link-mobile">-->
-<!--          <a href="#">Go to the catalog</a>-->
-<!--        </p>-->
-<!--      </div>-->
+      <!--      <div class="go-to-catalog">-->
+      <!--        <p class="catalog-link-mobile">-->
+      <!--          <a href="#">Go to the catalog</a>-->
+      <!--        </p>-->
+      <!--      </div>-->
     </div>
     <div class="manual-search">
       <!--      <p class="catalog-link-desktop">-->
@@ -373,16 +373,11 @@
           <!--    FILTER-Mobile END-->
         </div>
 
-
-
       </div>
     </div>
 
 
-
   </div>
-
-
 
 
 </section>
@@ -401,9 +396,7 @@
 <!--COUNTDOWN - End -->
 
 <!--IMAGE Block 1 - START-->
-<div class="sort-filter">
-
-</div>
+<div class="sort-filter"></div>
 
 <div class="roulette-mobile">
   <div class="roulette-mobile-card">
@@ -440,17 +433,19 @@
     <div class="testimonial card-block-2 exclusive">
       <a class="card-img-preview" href="#">
         <div class="card-img">
-          <img src="/images/main/img/preview1.png" alt="coming soon">
+          <img class="exclusive-preview" src="/images/main/img/preview1.png" alt="coming soon">
         </div>
       </a>
       <div class="card-footer">
         <div class="price">$100.50</div>
         <div class="like-cart">
           <a href="#">
-            <img src="/images/main/img/heart_exclusive.png" alt="heart">
+            <!--            remove OR add FULL class-->
+            <div class="heart exclusive full"></div>
           </a>
           <a href="#">
-            <img src="/images/main/img/cart_exclusive.png" alt="heart">
+            <!--            remove OR add FULL class-->
+            <div class="cart exclusive full-cart full"></div>
           </a>
         </div>
       </div>
@@ -466,31 +461,43 @@
           <img src="/images/main/img/preview1.png" alt="coming soon">
         </div>
       </a>
+
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price sale-price">$100.50</div>
+        <div class="price">$75.00</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
     <!--    sale card start-->
 
-    <div class="testimonial card-block-4">
+    <div class="testimonial card-block-4 free">
 
       <a class="card-img-preview" href="#">
         <div class="card-img">
           <img src="/images/main/img/preview1.png" alt="coming soon">
         </div>
       </a>
+
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart free"></div>
+          </a>
         </div>
       </div>
     </div>
+
     <div class="testimonial card-block-5">
       <a class="card-img-preview" href="#">
         <div class="card-img">
@@ -498,13 +505,18 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
+
     <!--    Banner POST EDITOR start-->
     <div class="right-cards">
       <a class="banner-preview" href="#">
@@ -512,6 +524,7 @@
       </a>
     </div>
     <!--    Banner POST EDITOR end-->
+
     <div class="testimonial card-block-6">
       <a class="card-img-preview" href="#">
         <div class="card-img">
@@ -519,10 +532,14 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
@@ -533,10 +550,14 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
@@ -547,10 +568,14 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
@@ -561,10 +586,14 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
@@ -575,10 +604,14 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
@@ -589,10 +622,14 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
@@ -603,10 +640,14 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
@@ -617,10 +658,14 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
@@ -631,10 +676,14 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
@@ -777,30 +826,34 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
     <!--    sale card start-->
 
     <!--    exclusive card START-->
-    <div class="testimonial card-block-2 exclusive">
+    <div class="testimonial card-block-2 ">
       <a class="card-img-preview" href="#">
         <div class="card-img">
           <img src="/images/main/img/preview1.png" alt="coming soon">
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
           <a href="#">
-            <img src="/images/main/img/heart_exclusive.png" alt="heart">
+            <div class="heart"></div>
           </a>
           <a href="#">
-            <img src="/images/main/img/cart_exclusive.png" alt="heart">
+            <div class="cart"></div>
           </a>
         </div>
       </div>
@@ -814,10 +867,14 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
@@ -828,10 +885,14 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
@@ -866,10 +927,14 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
@@ -880,10 +945,14 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
@@ -894,10 +963,14 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
@@ -908,10 +981,14 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
@@ -922,10 +999,14 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
@@ -936,10 +1017,14 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
@@ -950,10 +1035,14 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
@@ -964,10 +1053,14 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>
@@ -978,10 +1071,14 @@
         </div>
       </a>
       <div class="card-footer">
-        <div class="price">$100.50</div>
+        <div class="price">100.50</div>
         <div class="like-cart">
-          <a href="#"><img src="/images/main/img/heart.png" alt="heart"></a>
-          <a href="#"><img src="/images/main/img/cart.png" alt="cart"></a>
+          <a href="#">
+            <div class="heart"></div>
+          </a>
+          <a href="#">
+            <div class="cart"></div>
+          </a>
         </div>
       </div>
     </div>

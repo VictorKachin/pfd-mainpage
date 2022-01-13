@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Atma:wght@500&display=swap');
 
 .sort-filter {
-    max-width: 1430px;
-    position: relative;
-    display: flex;
-    /*justify-content: space-between;*/
-    justify-content: center;
+    /*max-width: 1430px;*/
+    /*position: relative;*/
+    /*display: flex;*/
+    /*!*justify-content: space-between;*!*/
+    /*justify-content: center;*/
 }
 
 .filter-block {
@@ -114,6 +114,91 @@ option {
     line-height: 10em;
 }
 
+.heart,
+.cart {
+    width: 25px;
+    height: 25px;
+}
+
+.heart {
+    background:
+            url("/images/main/img/heart-pink.svg")
+            no-repeat
+            center;
+}
+
+.heart:hover {
+    background:
+            url("/images/main/img/heart-pink_hover.svg")
+            no-repeat
+            center;
+}
+
+.exclusive.heart {
+    width: 25px;
+    height: 25px;
+    background:
+            url("/images/main/img/heart-yellow.svg")
+            no-repeat
+            center;
+}
+
+.exclusive.heart {
+    width: 25px;
+    height: 25px;
+    background:
+            url("/images/main/img/heart-yellow.svg")
+            no-repeat
+            center;
+}
+
+.exclusive.heart.full {
+    width: 25px;
+    height: 25px;
+    background:
+            url("/images/main/img/heart-yellow-full.svg")
+            no-repeat
+            center;
+}
+
+.cart {
+    background:
+            url("/images/main/img/cart-pink.svg")
+            no-repeat
+            center;
+}
+
+.cart:hover {
+    background:
+            url("/images/main/img/cart-pink_hover.svg")
+            no-repeat
+            center;
+}
+
+.exclusive.cart {
+    background:
+            url("/images/main/img/cart-yellow.svg")
+            no-repeat
+            center;
+}
+
+
+.exclusive.cart {
+    background:
+            url("/images/main/img/cart-yellow-full.svg")
+            no-repeat
+            center;
+}
+
+.free.cart {
+    background:
+            url("/images/main/img/downloand-icon.svg")
+            no-repeat
+            center;
+}
+
+
+
 .roulette {
     position: relative;
 }
@@ -206,6 +291,7 @@ option {
 .card-footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .price {
@@ -214,11 +300,19 @@ option {
     color: #232221;
 }
 
+.sale-price {
+    text-decoration: line-through;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #B7BFC3;
+}
+
 .like-cart {
     width: 35%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* testimonial cards LAYOUT */
@@ -228,6 +322,8 @@ option {
 
 .card-block-6, .card-block-11 {
     grid-column: 1;
+
+
 }
 
 .right-cards {
@@ -359,7 +455,7 @@ option {
     }
 
     .card-block-11 {
-        display: block;
+        display: flex;
         grid-column: 5;
     }
 
