@@ -220,7 +220,7 @@ header {
 .profile-details > .profile-summary::after {
     position: absolute;
     content: "";
-    background: url("/images/main/img/arrow-blue-down.png") no-repeat;
+    background: url("/images/arrow-blue-down.png") no-repeat;
     width: 16px;
     height: 9px;
     left: 30%;
@@ -230,7 +230,7 @@ header {
 .profile-details[open] > .profile-summary::after {
     position: absolute;
     content: "";
-    background: url("/images/main/img/arrow-footer-up.png") no-repeat;
+    background: url("/images/arrow-footer-up.png") no-repeat;
     width: 16px;
     height: 9px;
     right: 25px;

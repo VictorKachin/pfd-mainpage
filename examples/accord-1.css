@@ -62,7 +62,7 @@ details[open] summary ~ * {
 details > summary::after {
     position: absolute;
     content: "";
-    background: url("../images/main/img/arrow-footer-down.png") no-repeat;
+    background: url("../images/arrow-footer-down.png") no-repeat;
     width: 16px;
     height: 9px;
     right: 25px;
@@ -71,7 +71,7 @@ details > summary::after {
 details[open] > summary::after {
     position: absolute;
     content: "";
-    background: url("../images/main/img/arrow-footer-up.png") no-repeat;
+    background: url("../images/arrow-footer-up.png") no-repeat;
     width: 16px;
     height: 9px;
     right: 25px;

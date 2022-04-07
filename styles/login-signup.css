@@ -134,20 +134,20 @@ input[type=email] {
 
 .icon-user {
     background:
-            url("/images/main/img/icon-user.svg")
+            url("/images/icon-user.svg")
             no-repeat center content-box;
 }
 
 .icon-email,
 .icon-email-forgot {
     background:
-            url("/images/main/img/icon-email.svg")
+            url("/images/icon-email.svg")
             no-repeat center content-box;
 }
 
 .icon-psw {
     background:
-            url("/images/main/img/icon-psw.svg")
+            url("/images/icon-psw.svg")
             no-repeat center content-box;
 }
 
@@ -158,7 +158,7 @@ input[type=email] {
     right: 12px;
     top: 38px;
     background:
-            url("/images/main/img/icon-eye-active.svg")
+            url("/images/icon-eye-active.svg")
             no-repeat center content-box;
 }
 
@@ -170,7 +170,7 @@ input[type=email] {
     right: 12px;
     top: 38px;
     background:
-            url("/images/main/img/icon-eye.svg")
+            url("/images/icon-eye.svg")
             no-repeat center content-box;
 }
 

@@ -102,14 +102,14 @@
 
 .slider .slick-arrow.slick-prev {
     left: 0;
-    background: url("/images/main/img/arrow-violet-right.png") 0 0 / 100% no-repeat;
+    background: url("/images/arrow-violet-right.png") 0 0 / 100% no-repeat;
     transform: rotate(180deg);
     cursor: pointer;
 }
 
 .slider .slick-arrow.slick-next {
     right: 0;
-    background: url("/images/main/img/arrow-violet-right.png") 0 0 / 100% no-repeat;
+    background: url("/images/arrow-violet-right.png") 0 0 / 100% no-repeat;
     cursor: pointer;
 }
 
@@ -242,27 +242,27 @@
 .prepaid_slick {
     width: 320px;
     height: 320px;
-    background-image: url("/images/main/img/prepaid-310.svg");
+    background-image: url("/images/prepaid-310.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .prepaid_slick:hover {
-    background-image: url("/images/main/img/prepaid_hover-310.svg");
+    background-image: url("/images/prepaid_hover-310.svg");
 }
 
 .excl_slick {
     width: 320px;
     height: 320px;
-    background-image: url("/images/main/img/excl-310.svg");
+    background-image: url("/images/excl-310.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .excl_slick:hover {
-    background-image: url("/images/main/img/excl_hover-310.svg");
+    background-image: url("/images/excl_hover-310.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -271,14 +271,14 @@
 .blog_slick {
     width: 320px;
     height: 320px;
-    background-image: url("/images/main/img/blog-310.svg");
+    background-image: url("/images/blog-310.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .blog_slick:hover {
-    background-image: url("/images/main/img/blog_hover-310.svg");
+    background-image: url("/images/blog_hover-310.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
