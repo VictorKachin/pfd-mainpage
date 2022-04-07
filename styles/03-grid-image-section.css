@@ -197,8 +197,6 @@ option {
             center;
 }
 
-
-
 .roulette {
     position: relative;
 }
@@ -238,7 +236,6 @@ option {
     font-size: 18px;
     color: #7E67C0;
 }
-
 
 .percents {
     position: absolute;
@@ -322,8 +319,6 @@ option {
 
 .card-block-6, .card-block-11 {
     grid-column: 1;
-
-
 }
 
 .right-cards {
