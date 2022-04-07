@@ -47,7 +47,7 @@
     top: 15px;
     transition: .25s all ease;
     pointer-events: none;
-    background-image: url("/images/main/img/arrow-blue-down.png");
+    background-image: url("/images/arrow-blue-down.png");
     background-repeat: no-repeat;
 }
 
@@ -122,14 +122,14 @@ option {
 
 .heart {
     background:
-            url("/images/main/img/heart-pink.svg")
+            url("/images/heart-pink.svg")
             no-repeat
             center;
 }
 
 .heart:hover {
     background:
-            url("/images/main/img/heart-pink_hover.svg")
+            url("/images/heart-pink_hover.svg")
             no-repeat
             center;
 }
@@ -138,7 +138,7 @@ option {
     width: 25px;
     height: 25px;
     background:
-            url("/images/main/img/heart-yellow.svg")
+            url("/images/heart-yellow.svg")
             no-repeat
             center;
 }
@@ -147,7 +147,7 @@ option {
     width: 25px;
     height: 25px;
     background:
-            url("/images/main/img/heart-yellow.svg")
+            url("/images/heart-yellow.svg")
             no-repeat
             center;
 }
@@ -156,28 +156,28 @@ option {
     width: 25px;
     height: 25px;
     background:
-            url("/images/main/img/heart-yellow-full.svg")
+            url("/images/heart-yellow-full.svg")
             no-repeat
             center;
 }
 
 .cart {
     background:
-            url("/images/main/img/cart-pink.svg")
+            url("/images/cart-pink.svg")
             no-repeat
             center;
 }
 
 .cart:hover {
     background:
-            url("/images/main/img/cart-pink_hover.svg")
+            url("/images/cart-pink_hover.svg")
             no-repeat
             center;
 }
 
 .exclusive.cart {
     background:
-            url("/images/main/img/cart-yellow.svg")
+            url("/images/cart-yellow.svg")
             no-repeat
             center;
 }
@@ -185,14 +185,14 @@ option {
 
 .exclusive.cart {
     background:
-            url("/images/main/img/cart-yellow-full.svg")
+            url("/images/cart-yellow-full.svg")
             no-repeat
             center;
 }
 
 .free.cart {
     background:
-            url("/images/main/img/downloand-icon.svg")
+            url("/images/downloand-icon.svg")
             no-repeat
             center;
 }
@@ -270,7 +270,7 @@ option {
     content: "";
     width: 30px;
     height: 30px;
-    background: url("/images/main/img/01-header-icon-crown.png") no-repeat center rgba(39, 56, 65, 0.8);
+    background: url("/images/01-header-icon-crown.png") no-repeat center rgba(39, 56, 65, 0.8);
 }
 
 .exclusive.like-cart {
